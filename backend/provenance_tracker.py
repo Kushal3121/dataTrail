@@ -40,3 +40,21 @@ def clean_data(file_path: str) -> pd.DataFrame:
     df = pd.read_csv(file_path)
     df = df.dropna()  # Example cleaning step
     return df
+
+def normalize_data(df: pd.DataFrame) -> pd.DataFrame:
+    numeric_cols = df.select_dtypes(include='number').columns
+    df_norm = df.copy()
+    for col in numeric_cols:
+        min_val = df[col].min()
+        max_val = df[col].max()
+        if min_val != max_val:
+            df_norm[col] = (df[col] - min_val) / (max_val - min_val)
+    return df_norm
+
+def aggregate_data(df: pd.DataFrame, group_by: str = "Country") -> pd.DataFrame:
+    if group_by not in df.columns:
+        raise ValueError(f"Column '{group_by}' not found in DataFrame.")
+    
+    numeric_cols = df.select_dtypes(include='number').columns
+    df_agg = df.groupby(group_by)[numeric_cols].mean().reset_index()
+    return df_agg

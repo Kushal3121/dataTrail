@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 import os
 import pandas as pd
 from provenance_tracker import clean_data, log_transformation, load_provenance_log, compute_sha256
-from utils.roles import authorize_action  # ✅ role check
+from utils.roles import authorize_action
 
 app = FastAPI()
 
@@ -59,6 +59,26 @@ async def verify_provenance(
             })
     return {"status": "Provenance chain is valid"}
 
+@app.post("/normalize")
+async def normalize_file(
+    filename: str,
+    role: str = Header(..., convert_underscores=False)
+):
+    authorize_action(role, "transform")
+
+    file_path = os.path.join(PROCESSED_DIR, filename)
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="Processed file not found. Run /transform first.")
+
+    df = pd.read_csv(file_path)
+    df_norm = normalize_data(df)
+    log_entry = log_transformation("Normalization", df_norm)
+
+    norm_path = os.path.join(PROCESSED_DIR, f"normalized_{filename}")
+    df_norm.to_csv(norm_path, index=False)
+
+    return {"message": "Normalization complete.", "log_entry": log_entry}
+
 @app.get("/log")
 async def get_provenance_log(
     role: str = Header(..., convert_underscores=False)
@@ -70,3 +90,27 @@ async def get_provenance_log(
         return {"provenance_log": log}
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="No provenance log found.")
+
+@app.post("/aggregate")
+async def aggregate_file(
+    filename: str,
+    role: str = Header(..., convert_underscores=False)
+):
+    authorize_action(role, "transform")
+
+    norm_path = os.path.join(PROCESSED_DIR, f"normalized_{filename}")
+    if not os.path.exists(norm_path):
+        raise HTTPException(status_code=404, detail="Normalized file not found. Run /normalize first.")
+
+    try:
+        df = pd.read_csv(norm_path)
+        df_agg = aggregate_data(df)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    log_entry = log_transformation("Aggregation", df_agg)
+
+    agg_path = os.path.join(PROCESSED_DIR, f"aggregated_{filename}")
+    df_agg.to_csv(agg_path, index=False)
+
+    return {"message": "Aggregation complete.", "log_entry": log_entry}
