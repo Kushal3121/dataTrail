@@ -58,3 +58,15 @@ async def verify_provenance(
                 "found": log[i]["previous_hash"]
             })
     return {"status": "Provenance chain is valid"}
+
+@app.get("/log")
+async def get_provenance_log(
+    role: str = Header(..., convert_underscores=False)
+):
+    authorize_action(role, "view")
+
+    try:
+        log = load_provenance_log()
+        return {"provenance_log": log}
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="No provenance log found.")
