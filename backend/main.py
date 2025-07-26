@@ -59,6 +59,18 @@ async def verify_provenance(
             })
     return {"status": "Provenance chain is valid"}
 
+@app.get("/log")
+async def get_provenance_log(
+    role: str = Header(..., convert_underscores=False)
+):
+    authorize_action(role, "view")
+
+    try:
+        log = load_provenance_log()
+        return {"provenance_log": log}
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="No provenance log found.")
+
 @app.post("/normalize")
 async def normalize_file(
     filename: str,
@@ -78,18 +90,6 @@ async def normalize_file(
     df_norm.to_csv(norm_path, index=False)
 
     return {"message": "Normalization complete.", "log_entry": log_entry}
-
-@app.get("/log")
-async def get_provenance_log(
-    role: str = Header(..., convert_underscores=False)
-):
-    authorize_action(role, "view")
-
-    try:
-        log = load_provenance_log()
-        return {"provenance_log": log}
-    except FileNotFoundError:
-        raise HTTPException(status_code=404, detail="No provenance log found.")
 
 @app.post("/aggregate")
 async def aggregate_file(
