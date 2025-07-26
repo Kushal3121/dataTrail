@@ -115,7 +115,6 @@ const DashboardLayout = () => {
         </button>
       </aside>
 
-      {/* Main Content */}
       <main className='flex-1 p-6 overflow-y-auto'>
         <div className='flex justify-between items-center mb-4'>
           <h2 className='text-2xl font-bold'>Dashboard</h2>
