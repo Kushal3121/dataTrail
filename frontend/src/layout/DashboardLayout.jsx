@@ -1,11 +1,19 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import {
+  UploadCloud,
+  RefreshCw,
+  SlidersHorizontal,
+  BarChart3,
+  FileText,
+  ShieldCheck,
+  LogOut,
+} from 'lucide-react';
 
 const DashboardLayout = () => {
   const { user, signOut, isLoading } = useAuth();
   const navigate = useNavigate();
 
-  // Show loader while auth is being checked
   if (isLoading) {
     return (
       <div className='h-screen flex items-center justify-center bg-gray-100'>
@@ -29,43 +37,81 @@ const DashboardLayout = () => {
   }
 
   const navItems = [
-    { to: 'upload', label: '📁 Upload', roles: ['Admin'] },
-    { to: 'transform', label: '🔄 Transform', roles: ['Admin', 'Analyst'] },
-    { to: 'normalize', label: '📉 Normalize', roles: ['Admin', 'Analyst'] },
-    { to: 'aggregate', label: '📊 Aggregate', roles: ['Admin', 'Analyst'] },
-    { to: 'log', label: '📜 Logs', roles: ['Admin', 'Analyst', 'Viewer'] },
-    { to: 'verify', label: '✅ Verify', roles: ['Admin', 'Analyst'] },
+    {
+      to: 'upload',
+      label: 'Upload',
+      icon: <UploadCloud size={18} />,
+      roles: ['Admin'],
+    },
+    {
+      to: 'transform',
+      label: 'Transform',
+      icon: <RefreshCw size={18} />,
+      roles: ['Admin', 'Analyst'],
+    },
+    {
+      to: 'normalize',
+      label: 'Normalize',
+      icon: <SlidersHorizontal size={18} />,
+      roles: ['Admin', 'Analyst'],
+    },
+    {
+      to: 'aggregate',
+      label: 'Aggregate',
+      icon: <BarChart3 size={18} />,
+      roles: ['Admin', 'Analyst'],
+    },
+    {
+      to: 'log',
+      label: 'Logs',
+      icon: <FileText size={18} />,
+      roles: ['Admin', 'Analyst', 'Viewer'],
+    },
+    {
+      to: 'verify',
+      label: 'Verify',
+      icon: <ShieldCheck size={18} />,
+      roles: ['Admin', 'Analyst'],
+    },
   ];
 
   return (
     <div className='flex h-screen bg-gray-100 text-gray-900'>
       {/* Sidebar */}
-      <aside className='w-64 bg-indigo-900 text-white p-6 space-y-4'>
-        <h1 className='text-2xl font-bold mb-6'>DataTrail</h1>
-        {navItems.map(
-          (item) =>
-            item.roles.includes(user.role) && (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                className={({ isActive }) =>
-                  `block px-4 py-2 rounded-md text-sm font-medium ${
-                    isActive ? 'bg-indigo-700' : 'hover:bg-indigo-800'
-                  }`
-                }
-              >
-                {item.label}
-              </NavLink>
-            )
-        )}
+      <aside className='w-64 bg-gradient-to-b from-[#1e293b] to-[#0f172a] text-gray-100 p-6 space-y-4 shadow-lg border-r border-gray-800'>
+        <h1 className='text-2xl font-bold mb-6 text-center text-white'>
+          DataTrail
+        </h1>
+        <nav className='space-y-1'>
+          {navItems.map(
+            (item) =>
+              item.roles.includes(user.role) && (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `flex items-center gap-3 px-4 py-2 rounded-md text-sm font-medium transition-all ${
+                      isActive
+                        ? 'bg-[#334155] text-white'
+                        : 'hover:bg-[#1e293b] hover:text-white text-gray-300'
+                    }`
+                  }
+                >
+                  {item.icon}
+                  {item.label}
+                </NavLink>
+              )
+          )}
+        </nav>
+
         <button
           onClick={() => {
             signOut();
             navigate('/signin');
           }}
-          className='mt-6 w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-md text-sm'
+          className='mt-10 w-full flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white py-2 rounded-md text-sm font-semibold transition'
         >
-          Sign Out
+          <LogOut size={16} /> Sign Out
         </button>
       </aside>
 
