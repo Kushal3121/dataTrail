@@ -11,12 +11,13 @@ const SignUpPage = () => {
     lastName: '',
     username: '',
     password: '',
-    role: '', // default is empty
+    role: '',
     organization: '',
     address: '',
   });
 
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -27,12 +28,18 @@ const SignUpPage = () => {
       setError('Please select a role');
       return;
     }
-    try {
-      signUp(form);
-      navigate('/signin');
-    } catch (err) {
-      setError(err.message);
-    }
+
+    setLoading(true);
+    setTimeout(() => {
+      try {
+        signUp(form);
+        navigate('/signin');
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }, 1500);
   };
 
   return (
@@ -48,6 +55,7 @@ const SignUpPage = () => {
             name='firstName'
             placeholder='First Name'
             onChange={handleChange}
+            disabled={loading}
             className='p-2 border rounded-lg'
           />
           <input
@@ -55,6 +63,7 @@ const SignUpPage = () => {
             name='lastName'
             placeholder='Last Name'
             onChange={handleChange}
+            disabled={loading}
             className='p-2 border rounded-lg'
           />
           <input
@@ -62,6 +71,7 @@ const SignUpPage = () => {
             name='username'
             placeholder='Username'
             onChange={handleChange}
+            disabled={loading}
             className='p-2 border rounded-lg sm:col-span-2'
           />
           <input
@@ -69,6 +79,7 @@ const SignUpPage = () => {
             name='password'
             placeholder='Password'
             onChange={handleChange}
+            disabled={loading}
             className='p-2 border rounded-lg sm:col-span-2'
           />
           <input
@@ -76,6 +87,7 @@ const SignUpPage = () => {
             name='organization'
             placeholder='Organization'
             onChange={handleChange}
+            disabled={loading}
             className='p-2 border rounded-lg'
           />
           <input
@@ -83,12 +95,14 @@ const SignUpPage = () => {
             name='address'
             placeholder='Address'
             onChange={handleChange}
+            disabled={loading}
             className='p-2 border rounded-lg'
           />
           <select
             name='role'
             value={form.role}
             onChange={handleChange}
+            disabled={loading}
             className='p-2 border rounded-lg sm:col-span-2'
           >
             <option value='' disabled>
@@ -106,9 +120,18 @@ const SignUpPage = () => {
 
         <button
           onClick={handleSubmit}
-          className='mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-lg transition'
+          disabled={loading}
+          className={`mt-6 w-full text-white font-semibold py-2 rounded-lg transition flex items-center justify-center ${
+            loading
+              ? 'bg-indigo-400 cursor-not-allowed'
+              : 'bg-indigo-600 hover:bg-indigo-700'
+          }`}
         >
-          Sign Up
+          {loading ? (
+            <div className='h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin'></div>
+          ) : (
+            'Sign Up'
+          )}
         </button>
 
         <p className='text-sm text-center mt-4 text-gray-600'>

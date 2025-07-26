@@ -10,19 +10,26 @@ const SignInPage = () => {
 
   const [form, setForm] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false); // ✅ New loading state
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = () => {
-    try {
-      const role = signIn(form);
-      setRole(role);
-      navigate('/dashboard');
-    } catch (err) {
-      setError(err.message);
-    }
+    setError('');
+    setLoading(true);
+    setTimeout(() => {
+      try {
+        const role = signIn(form);
+        setRole(role);
+        navigate('/dashboard');
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }, 1000);
   };
 
   return (
@@ -38,6 +45,7 @@ const SignInPage = () => {
           placeholder='Username'
           onChange={handleChange}
           className='w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg'
+          disabled={loading}
         />
 
         <input
@@ -46,6 +54,7 @@ const SignInPage = () => {
           placeholder='Password'
           onChange={handleChange}
           className='w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg'
+          disabled={loading}
         />
 
         {error && (
@@ -54,9 +63,18 @@ const SignInPage = () => {
 
         <button
           onClick={handleSubmit}
-          className='w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-lg transition'
+          disabled={loading}
+          className={`w-full ${
+            loading
+              ? 'bg-indigo-400 cursor-not-allowed'
+              : 'bg-indigo-600 hover:bg-indigo-700'
+          } text-white font-semibold py-2 rounded-lg transition flex items-center justify-center`}
         >
-          Sign In
+          {loading ? (
+            <div className='h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin'></div>
+          ) : (
+            'Sign In'
+          )}
         </button>
 
         <p className='text-sm text-center mt-4 text-gray-600'>

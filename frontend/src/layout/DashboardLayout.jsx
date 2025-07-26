@@ -2,10 +2,18 @@ import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 const DashboardLayout = () => {
-  const { user, signOut } = useAuth();
+  const { user, signOut, isLoading } = useAuth();
   const navigate = useNavigate();
 
-  // ⛔ Prevent layout from rendering before user is loaded
+  // Show loader while auth is being checked
+  if (isLoading) {
+    return (
+      <div className='h-screen flex items-center justify-center bg-gray-100'>
+        <div className='animate-spin h-12 w-12 border-4 border-indigo-600 border-t-transparent rounded-full'></div>
+      </div>
+    );
+  }
+
   if (!user) {
     return (
       <div className='h-screen flex items-center justify-center bg-gray-100 text-gray-700 text-xl'>
@@ -31,6 +39,7 @@ const DashboardLayout = () => {
 
   return (
     <div className='flex h-screen bg-gray-100 text-gray-900'>
+      {/* Sidebar */}
       <aside className='w-64 bg-indigo-900 text-white p-6 space-y-4'>
         <h1 className='text-2xl font-bold mb-6'>DataTrail</h1>
         {navItems.map(
@@ -60,11 +69,12 @@ const DashboardLayout = () => {
         </button>
       </aside>
 
+      {/* Main Content */}
       <main className='flex-1 p-6 overflow-y-auto'>
         <div className='flex justify-between items-center mb-4'>
           <h2 className='text-2xl font-bold'>Dashboard</h2>
           <div className='text-sm text-gray-500'>
-            Logged in as: <span className='font-semibold'>{user.role}</span>
+            Logged in as: <span className='font-semibold'>{user?.role}</span>
           </div>
         </div>
         <div className='bg-white p-6 rounded-lg shadow-md'>
