@@ -4,22 +4,16 @@ DataTrail is a full-stack data transformation platform built with **FastAPI** an
 
 ### 🔍 Key Features
 
-- ✅ **Role-based Access Control** (Admin, Analyst, Viewer)
-- 📤 Upload CSV datasets
-- 🧹 Apply data transformations:
+- **Role-based Access Control** (Admin, Analyst, Viewer)
+- Upload CSV datasets
+- Apply data transformations:
   - Cleaning (e.g., drop nulls)
   - Normalization (min-max scaling)
   - Aggregation (e.g., group by country)
-- 🔐 Immutable **Provenance Logging** with hash chaining
-- 🧾 Log verification to detect tampering
-- 📊 Intuitive **Dashboard UI** built with Tailwind + Headless UI
-- ⚡ Real-time feedback with toasts, progress bars, and data previews
-
----
-
-### 🚀 Demo Walkthrough (optional GIF/image)
-
-> _Insert screenshots or a Loom/video link here showing upload → transform → normalize → verify flow_
+- Immutable **Provenance Logging** with hash chaining
+- Log verification to detect tampering
+- Intuitive **Dashboard UI** built with Tailwind + Headless UI
+- Real-time feedback with toasts, progress bars, and data previews
 
 ---
 
