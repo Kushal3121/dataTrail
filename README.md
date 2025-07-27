@@ -1,4 +1,4 @@
-# 🛡️ DataTrail - Provenance-Backed Data Pipeline
+# 🛡️ DataTrail: Provenance-Backed Data Pipeline
 
 DataTrail is a full-stack data transformation platform built with **FastAPI** and **React**. It allows authenticated users to upload datasets, apply transformations (cleaning, normalization, aggregation), and track every change through a tamper-proof **provenance log**.
 
