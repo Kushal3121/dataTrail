@@ -27,16 +27,16 @@ os.makedirs(PROCESSED_DIR, exist_ok=True)
 @app.post("/upload")
 async def upload_file(
     file: UploadFile = File(...),
-    role: str = Header(..., convert_underscores=False)  # 🛡️ require role
+    role: str = Header(..., convert_underscores=False) 
 ):
     authorize_action(role, "upload")
     
     if not file.filename.endswith(".csv"):
         raise HTTPException(status_code=400, detail="Only CSV files are allowed.")
     file_path = os.path.join(RAW_DIR, file.filename)
-    df = pd.read_csv(file_path)
     with open(file_path, "wb") as f:
         f.write(await file.read())
+    df = pd.read_csv(file_path)
     log_transformation("Upload", df)
     return {"message": f"File '{file.filename}' uploaded successfully."}
 
@@ -161,7 +161,7 @@ def preview_file(
     source: str = "raw"
 ):
     base_dir = "data/processed" if source == "processed" else "data/raw"
-    path = os.path.join("data/raw", filename)
+    path = os.path.join(base_dir, filename)
     if not os.path.exists(path):
         raise HTTPException(status_code=404, detail="File not found")
 
@@ -177,3 +177,16 @@ def preview_file(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/processed-files")
+async def list_processed_files(
+    role: str = Header(..., convert_underscores=False)
+):
+    authorize_action(role, "view")
+    try:
+        files = [
+            f for f in os.listdir(PROCESSED_DIR)
+            if not f.startswith("normalized_") and not f.startswith("aggregated_")
+        ]
+        return {"files": files}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

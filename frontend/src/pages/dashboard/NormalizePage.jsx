@@ -2,15 +2,17 @@ import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { SlidersHorizontal } from 'lucide-react';
 import FileDropdown from '../../components/FileDropDown';
+import PreviewTable from '../../components/PreviewTable';
 
 const NormalizePage = () => {
   const [files, setFiles] = useState([]);
   const [selectedFile, setSelectedFile] = useState('');
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [previewData, setPreviewData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/raw-files', {
+    fetch('http://localhost:8000/processed-files', {
       headers: {
         role:
           JSON.parse(localStorage.getItem('loggedInUser'))?.role || 'Viewer',
@@ -29,30 +31,29 @@ const NormalizePage = () => {
 
     setLoading(true);
     setProgress(0);
+    setPreviewData(null);
 
     let animationDone = false;
     let apiDone = false;
     let toastMessage = null;
+    let preview = null;
 
     const finish = () => {
       setTimeout(() => {
         setLoading(false);
-        if (toastMessage) {
-          if (toastMessage.type === 'success') {
-            toast.success(toastMessage.message);
-          } else {
-            toast.error(toastMessage.message);
-          }
-        }
-      }, 300); // Small delay to make 100% progress bar feel final
+        if (toastMessage?.type === 'success')
+          toast.success(toastMessage.message);
+        else if (toastMessage?.type === 'error')
+          toast.error(toastMessage.message);
+        if (preview) setPreviewData(preview);
+      }, 300);
     };
 
-    // ⏳ Animate progress bar
-    const fakeProgress = setInterval(() => {
+    const interval = setInterval(() => {
       setProgress((prev) => {
         const next = Math.min(prev + 10, 100);
         if (next === 100) {
-          clearInterval(fakeProgress);
+          clearInterval(interval);
           animationDone = true;
           if (apiDone) finish();
         }
@@ -60,7 +61,6 @@ const NormalizePage = () => {
       });
     }, 150);
 
-    // 🔁 API call
     fetch(`http://localhost:8000/normalize?filename=${selectedFile}`, {
       method: 'POST',
       headers: {
@@ -72,14 +72,32 @@ const NormalizePage = () => {
         const data = await res.json();
         if (!res.ok) throw new Error(data.detail || 'Normalization failed');
         toastMessage = { type: 'success', message: 'Normalization complete!' };
-        console.log('Hash:', data.log_entry.hash);
+
+        // Fetch normalized preview
+        return fetch(
+          `http://localhost:8000/preview?filename=normalized_${selectedFile}&source=processed`,
+          {
+            headers: {
+              role:
+                JSON.parse(localStorage.getItem('loggedInUser'))?.role ||
+                'Viewer',
+            },
+          }
+        );
+      })
+      .then((res) => res.json())
+      .then((data) => {
+        preview = data;
       })
       .catch((err) => {
-        toastMessage = { type: 'error', message: err.message };
+        toastMessage = {
+          type: 'error',
+          message: err.message || 'Normalization failed',
+        };
       })
       .finally(() => {
         apiDone = true;
-        if (progress === 100) finish(); // If progress bar is already full
+        if (progress === 100) finish();
       });
   };
 
@@ -98,22 +116,25 @@ const NormalizePage = () => {
       <button
         onClick={handleNormalize}
         disabled={loading}
-        className={`w-full py-2 rounded-lg font-medium transition flex items-center justify-center ${
+        className={`w-full py-2 rounded-lg font-medium relative overflow-hidden transition flex items-center justify-center ${
           loading
-            ? 'bg-indigo-400 cursor-not-allowed'
+            ? 'bg-indigo-400 cursor-not-allowed text-white'
             : 'bg-indigo-600 hover:bg-indigo-700 text-white'
         }`}
       >
-        {loading ? 'Normalizing...' : 'Normalize'}
-      </button>
-
-      {loading && (
-        <div className='w-full h-3 bg-gray-200 rounded-lg overflow-hidden'>
-          <div
-            className='h-full bg-indigo-600 rounded-lg transition-all duration-300 ease-in-out'
+        {loading && (
+          <span
+            className='absolute top-0 left-0 h-full bg-indigo-500 opacity-30 transition-all duration-300 ease-in-out'
             style={{ width: `${progress}%` }}
           />
-        </div>
+        )}
+        <span className='relative z-10'>
+          {loading ? 'Normalizing...' : 'Normalize'}
+        </span>
+      </button>
+
+      {previewData && (
+        <PreviewTable columns={previewData.columns} rows={previewData.rows} />
       )}
     </div>
   );
