@@ -110,7 +110,7 @@ const DashboardLayout = () => {
         <button
           onClick={() => {
             signOut();
-            navigate('/signin');
+            navigate('/');
           }}
           className='w-full mt-10 bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg text-base font-semibold flex items-center justify-center gap-2'
         >
