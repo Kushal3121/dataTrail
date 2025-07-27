@@ -4,8 +4,20 @@ import os
 import pandas as pd
 from provenance_tracker import clean_data, log_transformation, load_provenance_log, compute_sha256
 from utils.roles import authorize_action
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app = FastAPI()
+
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 RAW_DIR = "data/raw"
 PROCESSED_DIR = "data/processed"
@@ -25,6 +37,18 @@ async def upload_file(
     with open(file_path, "wb") as f:
         f.write(await file.read())
     return {"message": f"File '{file.filename}' uploaded successfully."}
+
+@app.get("/raw-files")
+async def list_raw_files(
+    role: str = Header(..., convert_underscores=False)
+):
+    authorize_action(role, "view")
+
+    try:
+        files = [f for f in os.listdir(RAW_DIR) if f.endswith('.csv')]
+        return {"files": files}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/transform")
 async def transform_file(
