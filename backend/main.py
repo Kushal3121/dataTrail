@@ -115,6 +115,17 @@ async def normalize_file(
 
     return {"message": "Normalization complete.", "log_entry": log_entry}
 
+@app.get("/normalized-files")
+async def list_normalized_files(
+    role: str = Header(..., convert_underscores=False)
+):
+    authorize_action(role, "view")
+    try:
+        files = [f for f in os.listdir(PROCESSED_DIR) if f.startswith("normalized_")]
+        return {"files": files}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 @app.post("/aggregate")
 async def aggregate_file(
     filename: str,
@@ -122,7 +133,7 @@ async def aggregate_file(
 ):
     authorize_action(role, "transform")
 
-    norm_path = os.path.join(PROCESSED_DIR, f"normalized_{filename}")
+    norm_path = os.path.join(PROCESSED_DIR, filename)
     if not os.path.exists(norm_path):
         raise HTTPException(status_code=404, detail="Normalized file not found. Run /normalize first.")
 
