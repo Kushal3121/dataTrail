@@ -18,7 +18,11 @@ const PreviewTable = ({ columns, rows }) => {
           <thead className='bg-gray-50'>
             <tr>
               {columns.map((col, i) => (
-                <th key={i} className='px-4 py-3 text-left font-medium'>
+                <th
+                  key={i}
+                  className='px-4 py-3 text-left font-medium whitespace-nowrap truncate max-w-[180px]'
+                  title={col}
+                >
                   {col}
                 </th>
               ))}

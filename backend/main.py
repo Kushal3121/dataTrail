@@ -160,7 +160,7 @@ def preview_file(
         raise HTTPException(status_code=404, detail="File not found")
 
     try:
-        df = pd.read_csv(path, nrows=20)
+        df = pd.read_csv(path)
         df = df.replace({pd.NA: None, pd.NaT: None, float('nan'): None, float('inf'): None, float('-inf'): None})
         df = df.where(pd.notnull(df), None)
 
