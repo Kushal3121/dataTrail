@@ -3,6 +3,8 @@ import hashlib
 import pandas as pd
 import json
 from datetime import datetime
+import pytz
+
 
 PROVENANCE_LOG = "provenance/log.json"
 
@@ -26,8 +28,12 @@ def log_transformation(step: str, df: pd.DataFrame):
     log = load_provenance_log()
 
     previous_hash = log[-1]['hash'] if log else None
+    
+    central = pytz.timezone("America/Chicago")
+    timestamp = datetime.now(central).isoformat()
+
     log_entry = {
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp":timestamp,
         "step": step,
         "hash": hash_value,
         "previous_hash": previous_hash

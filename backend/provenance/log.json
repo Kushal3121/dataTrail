@@ -124,5 +124,47 @@
     "step": "Aggregation",
     "hash": "c55077f1e191593324bbb641cd24baae2f799f7c7c953b98fc4c434fb8f38805",
     "previous_hash": "25de65e29cfc81e607888cc749bbe711652defb332573576ec77d4a2bc275a28"
+  },
+  {
+    "timestamp": "2025-07-27T19:27:36.468777",
+    "step": "Cleaning",
+    "hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae",
+    "previous_hash": "c55077f1e191593324bbb641cd24baae2f799f7c7c953b98fc4c434fb8f38805"
+  },
+  {
+    "timestamp": "2025-07-27T19:27:42.367978",
+    "step": "Normalization",
+    "hash": "8c45f6a486c9177a7eeca8961a8f2405d400fd213b63a62fb23c2cfca550d7fe",
+    "previous_hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae"
+  },
+  {
+    "timestamp": "2025-07-27T19:27:49.724491",
+    "step": "Aggregation",
+    "hash": "ff273cb82dfa99e85a4396df355f46de0832c53e06cacf5c75c3205d37dbfceb",
+    "previous_hash": "8c45f6a486c9177a7eeca8961a8f2405d400fd213b63a62fb23c2cfca550d7fe"
+  },
+  {
+    "timestamp": "2025-07-27T14:32:41.937882-05:00",
+    "step": "Cleaning",
+    "hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae",
+    "previous_hash": "ff273cb82dfa99e85a4396df355f46de0832c53e06cacf5c75c3205d37dbfceb"
+  },
+  {
+    "timestamp": "2025-07-27T14:33:34.549383-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae"
+  },
+  {
+    "timestamp": "2025-07-27T14:34:48.918813-05:00",
+    "step": "Upload",
+    "hash": "d7a21e7baec83c8c631b2cd013b90da6c23cd9237081ad558662a8657745e590",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "timestamp": "2025-07-27T14:35:06.983643-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "d7a21e7baec83c8c631b2cd013b90da6c23cd9237081ad558662a8657745e590"
   }
 ]

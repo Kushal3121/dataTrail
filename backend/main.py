@@ -34,8 +34,10 @@ async def upload_file(
     if not file.filename.endswith(".csv"):
         raise HTTPException(status_code=400, detail="Only CSV files are allowed.")
     file_path = os.path.join(RAW_DIR, file.filename)
+    df = pd.read_csv(file_path)
     with open(file_path, "wb") as f:
         f.write(await file.read())
+    log_transformation("Upload", df)
     return {"message": f"File '{file.filename}' uploaded successfully."}
 
 @app.get("/raw-files")
@@ -81,7 +83,9 @@ async def verify_provenance(
                 "expected_hash": log[i - 1]["hash"],
                 "found": log[i]["previous_hash"]
             })
+    log_transformation("Verification", pd.DataFrame()) 
     return {"status": "Provenance chain is valid"}
+
 
 @app.get("/log")
 async def get_provenance_log(
