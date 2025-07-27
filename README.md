@@ -1,4 +1,4 @@
-# 🛡️ DataTrail — A Provenance-Aware Data Processing Platform
+# 🛡️ DataTrail - Provenance-Backed Data Pipeline
 
 DataTrail is a full-stack data transformation platform built with **FastAPI** and **React**. It allows authenticated users to upload datasets, apply transformations (cleaning, normalization, aggregation), and track every change through a tamper-proof **provenance log**.
 
@@ -50,4 +50,12 @@ python -m venv venv
 source venv/bin/activate  # or .\venv\Scripts\activate on Windows
 pip install -r requirements.txt
 uvicorn main:app --reload
+```
+
+#### Frontend (React)
+
+```bash
+cd frontend
+npm install
+npm run dev
 ```
