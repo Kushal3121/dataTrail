@@ -149,3 +149,25 @@ async def aggregate_file(
     df_agg.to_csv(agg_path, index=False)
 
     return {"message": "Aggregation complete.", "log_entry": log_entry}
+
+@app.get("/preview")
+def preview_file(
+    filename: str,
+    role: str = Header(..., convert_underscores=False)
+):
+    path = os.path.join("data/raw", filename)
+    if not os.path.exists(path):
+        raise HTTPException(status_code=404, detail="File not found")
+
+    try:
+        df = pd.read_csv(path, nrows=20)
+        df = df.replace({pd.NA: None, pd.NaT: None, float('nan'): None, float('inf'): None, float('-inf'): None})
+        df = df.where(pd.notnull(df), None)
+
+        return {
+            "columns": df.columns.tolist(),
+            "rows": df.values.tolist()
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
