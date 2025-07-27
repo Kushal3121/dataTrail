@@ -5,6 +5,7 @@ import pandas as pd
 from provenance_tracker import clean_data, log_transformation, load_provenance_log, compute_sha256, normalize_data, aggregate_data
 from utils.roles import authorize_action
 from fastapi.middleware.cors import CORSMiddleware
+from pathlib import Path
 
 app = FastAPI()
 
@@ -37,7 +38,7 @@ async def upload_file(
     with open(file_path, "wb") as f:
         f.write(await file.read())
     df = pd.read_csv(file_path)
-    log_transformation("Upload", df)
+    log_transformation("Upload", df, file.filename)
     return {"message": f"File '{file.filename}' uploaded successfully."}
 
 @app.get("/raw-files")
@@ -63,26 +64,58 @@ async def transform_file(
     if not os.path.exists(file_path):
         raise HTTPException(status_code=404, detail="File not found.")
     df_clean = clean_data(file_path)
-    log_entry = log_transformation("Cleaning", df_clean)
+    if 'Profit' in df_clean.columns and 'Total Sales' in df_clean.columns:
+        df_clean['Profit Margin (%)'] = df_clean.apply(
+            lambda row: round((row['Profit'] / row['Total Sales']) * 100, 2)
+            if row['Total Sales'] not in [0, None] else 0,
+            axis=1
+        )
+    log_entry = log_transformation("Cleaning", df_clean, filename)
     processed_path = os.path.join(PROCESSED_DIR, filename)
     df_clean.to_csv(processed_path, index=False)
     return {"message": "Transformation complete.", "log_entry": log_entry}
 
 @app.get("/verify")
-async def verify_provenance(
-    role: str = Header(..., convert_underscores=False)
-):
+async def verify_provenance(role: str = Header(..., convert_underscores=False)):
     authorize_action(role, "verify")
 
     log = load_provenance_log()
     for i in range(1, len(log)):
+        # Check hash chain
         if log[i]["previous_hash"] != log[i - 1]["hash"]:
             return JSONResponse(status_code=400, content={
-                "status": "Tampering detected",
+                "status": "Tampering detected: hash chain mismatch",
                 "step": log[i]["step"],
                 "expected_hash": log[i - 1]["hash"],
                 "found": log[i]["previous_hash"]
             })
+
+    for entry in log:
+        filename = entry.get("file_name")  
+        if not filename:
+            continue
+        path = (
+            Path("data/raw") / filename if entry["step"] == "Upload"
+            else Path("data/processed") / filename
+        )
+        if not path.exists():
+            return JSONResponse(status_code=400, content={
+                "status": "File not found for verification",
+                "file": filename
+            })
+
+        df = pd.read_csv(path)
+        current_hash = compute_sha256(df)
+
+        if current_hash != entry["hash"]:
+            return JSONResponse(status_code=400, content={
+                "status": "Tampering detected",
+                "step": entry["step"],
+                "file": filename,
+                "expected_hash": entry["hash"],
+                "actual_hash": current_hash
+            })
+
     log_transformation("Verification", pd.DataFrame()) 
     return {"status": "Provenance chain is valid"}
 
@@ -112,7 +145,7 @@ async def normalize_file(
 
     df = pd.read_csv(file_path)
     df_norm = normalize_data(df)
-    log_entry = log_transformation("Normalization", df_norm)
+    log_entry = log_transformation("Normalization", df_norm, f"normalized_{filename}")
 
     norm_path = os.path.join(PROCESSED_DIR, f"normalized_{filename}")
     df_norm.to_csv(norm_path, index=False)
@@ -147,7 +180,7 @@ async def aggregate_file(
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
 
-    log_entry = log_transformation("Aggregation", df_agg)
+    log_entry = log_transformation("Aggregation", df_agg, f"aggregated_{filename}")
 
     agg_path = os.path.join(PROCESSED_DIR, f"aggregated_{filename}")
     df_agg.to_csv(agg_path, index=False)
