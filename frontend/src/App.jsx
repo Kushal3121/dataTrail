@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { RoleProvider } from './context/RoleContext';
 import { AuthProvider } from './context/AuthContext';
+import { Toaster } from 'react-hot-toast';
 
 import LandingPage from './pages/LandingPage';
 import SignUpPage from './pages/SignUpPage';
@@ -13,15 +14,11 @@ import AggregatePage from './pages/dashboard/AggregatePage';
 import LogPage from './pages/dashboard/LogPage';
 import VerifyPage from './pages/dashboard/VerifyPage';
 
-// TEMP placeholder for dashboard
-const Dashboard = () => (
-  <h1 className='text-center text-2xl mt-10'>Dashboard Page</h1>
-);
-
 function App() {
   return (
     <AuthProvider>
       <RoleProvider>
+        <Toaster position='top-right' />
         <Router>
           <Routes>
             <Route path='/' element={<LandingPage />} />

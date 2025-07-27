@@ -107,7 +107,6 @@ const DashboardLayout = () => {
           </nav>
         </div>
 
-        {/* Bottom: Sign out */}
         <button
           onClick={() => {
             signOut();
