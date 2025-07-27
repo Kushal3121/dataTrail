@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import RoleDropdown from '../components/RoleDropdown';
 
 const SignUpPage = () => {
   const { signUp } = useAuth();
@@ -18,10 +19,15 @@ const SignUpPage = () => {
 
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [selectedRole, setSelectedRole] = useState('');
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+
+  useEffect(() => {
+    setForm((prev) => ({ ...prev, role: selectedRole }));
+  }, [selectedRole]);
 
   const handleSubmit = () => {
     if (!form.role) {
@@ -43,9 +49,9 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center bg-gray-50 px-4'>
-      <div className='bg-white shadow-lg rounded-lg p-8 w-full max-w-xl'>
-        <h2 className='text-2xl font-bold mb-6 text-center'>
+    <div className='min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-[#1e293b] to-[#0f172a] text-gray-100 px-4'>
+      <div className='bg-white shadow-2xl rounded-xl p-10 w-full max-w-xl text-gray-800'>
+        <h2 className='text-3xl font-extrabold mb-6 text-center text-indigo-700'>
           Create an Account
         </h2>
 
@@ -56,7 +62,7 @@ const SignUpPage = () => {
             placeholder='First Name'
             onChange={handleChange}
             disabled={loading}
-            className='p-2 border rounded-lg'
+            className='p-3 border rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-indigo-500'
           />
           <input
             type='text'
@@ -64,7 +70,7 @@ const SignUpPage = () => {
             placeholder='Last Name'
             onChange={handleChange}
             disabled={loading}
-            className='p-2 border rounded-lg'
+            className='p-3 border rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-indigo-500'
           />
           <input
             type='text'
@@ -72,7 +78,7 @@ const SignUpPage = () => {
             placeholder='Username'
             onChange={handleChange}
             disabled={loading}
-            className='p-2 border rounded-lg sm:col-span-2'
+            className='p-3 border rounded-lg sm:col-span-2 shadow focus:outline-none focus:ring-2 focus:ring-indigo-500'
           />
           <input
             type='password'
@@ -80,7 +86,7 @@ const SignUpPage = () => {
             placeholder='Password'
             onChange={handleChange}
             disabled={loading}
-            className='p-2 border rounded-lg sm:col-span-2'
+            className='p-3 border rounded-lg sm:col-span-2 shadow focus:outline-none focus:ring-2 focus:ring-indigo-500'
           />
           <input
             type='text'
@@ -88,7 +94,7 @@ const SignUpPage = () => {
             placeholder='Organization'
             onChange={handleChange}
             disabled={loading}
-            className='p-2 border rounded-lg'
+            className='p-3 border rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-indigo-500'
           />
           <input
             type='text'
@@ -96,22 +102,15 @@ const SignUpPage = () => {
             placeholder='Address'
             onChange={handleChange}
             disabled={loading}
-            className='p-2 border rounded-lg'
+            className='p-3 border rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-indigo-500'
           />
-          <select
-            name='role'
-            value={form.role}
-            onChange={handleChange}
-            disabled={loading}
-            className='p-2 border rounded-lg sm:col-span-2'
-          >
-            <option value='' disabled>
-              -- Select Role --
-            </option>
-            <option value='Admin'>Admin</option>
-            <option value='Analyst'>Analyst</option>
-            <option value='Viewer'>Viewer</option>
-          </select>
+
+          <div className='sm:col-span-2'>
+            <RoleDropdown
+              selected={selectedRole}
+              setSelected={setSelectedRole}
+            />
+          </div>
         </div>
 
         {error && (
@@ -121,7 +120,7 @@ const SignUpPage = () => {
         <button
           onClick={handleSubmit}
           disabled={loading}
-          className={`mt-6 w-full text-white font-semibold py-2 rounded-lg transition flex items-center justify-center ${
+          className={`mt-6 w-full text-white font-semibold py-3 rounded-lg transition flex items-center justify-center shadow-lg ${
             loading
               ? 'bg-indigo-400 cursor-not-allowed'
               : 'bg-indigo-600 hover:bg-indigo-700'
