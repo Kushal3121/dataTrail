@@ -77,41 +77,45 @@ const DashboardLayout = () => {
 
   return (
     <div className='flex h-screen bg-gray-100 text-gray-900'>
-      {/* Sidebar */}
-      <aside className='w-64 bg-gradient-to-b from-[#1e293b] to-[#0f172a] text-gray-100 p-6 space-y-4 shadow-lg border-r border-gray-800'>
-        <h1 className='text-2xl font-bold mb-6 text-center text-white'>
-          DataTrail
-        </h1>
-        <nav className='space-y-1'>
-          {navItems.map(
-            (item) =>
-              item.roles.includes(user.role) && (
-                <NavLink
-                  key={item.to}
-                  to={item.to}
-                  className={({ isActive }) =>
-                    `flex items-center gap-3 px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                      isActive
-                        ? 'bg-[#334155] text-white'
-                        : 'hover:bg-[#1e293b] hover:text-white text-gray-300'
-                    }`
-                  }
-                >
-                  {item.icon}
-                  {item.label}
-                </NavLink>
-              )
-          )}
-        </nav>
+      <aside className='w-64 bg-gradient-to-b from-[#1e293b] to-[#0f172a] text-gray-100 px-6 py-8 flex flex-col justify-between shadow-lg border-r border-gray-800'>
+        <div>
+          <div className='flex items-center justify-start gap-2 px-2 mb-10'>
+            <ShieldCheck className='h-6 w-6 text-indigo-400' />
+            <h1 className='text-2xl font-bold text-white'>DataTrail</h1>
+          </div>
 
+          <nav className='space-y-3 mt-12'>
+            {navItems.map(
+              (item) =>
+                item.roles.includes(user.role) && (
+                  <NavLink
+                    key={item.to}
+                    to={item.to}
+                    className={({ isActive }) =>
+                      `flex items-center gap-2 px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
+                        isActive
+                          ? 'bg-indigo-700 text-white'
+                          : 'hover:bg-indigo-800 text-gray-200'
+                      }`
+                    }
+                  >
+                    {item.icon}
+                    {item.label}
+                  </NavLink>
+                )
+            )}
+          </nav>
+        </div>
+
+        {/* Bottom: Sign out */}
         <button
           onClick={() => {
             signOut();
             navigate('/signin');
           }}
-          className='mt-10 w-full flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white py-2 rounded-md text-sm font-semibold transition'
+          className='w-full mt-10 bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg text-base font-semibold flex items-center justify-center gap-2'
         >
-          <LogOut size={16} /> Sign Out
+          <span className='text-lg'>⎋</span> Sign Out
         </button>
       </aside>
 
