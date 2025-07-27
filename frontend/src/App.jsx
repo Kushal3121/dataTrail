@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
 import { RoleProvider } from './context/RoleContext';
 import { AuthProvider } from './context/AuthContext';
 import { Toaster } from 'react-hot-toast';
@@ -25,6 +30,8 @@ function App() {
             <Route path='/signup' element={<SignUpPage />} />
             <Route path='/signin' element={<SignInPage />} />
             <Route path='/dashboard' element={<DashboardLayout />}>
+              <Route index element={<Navigate to='log' replace />} />{' '}
+              {/* 👈 Default redirect */}
               <Route path='upload' element={<UploadPage />} />
               <Route path='transform' element={<TransformPage />} />
               <Route path='normalize' element={<NormalizePage />} />
