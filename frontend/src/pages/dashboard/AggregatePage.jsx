@@ -2,14 +2,15 @@ import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { BarChart3 } from 'lucide-react';
 import FileDropdown from '../../components/FileDropDown';
+import PreviewTable from '../../components/PreviewTable';
 
 const AggregatePage = () => {
   const [files, setFiles] = useState([]);
   const [selectedFile, setSelectedFile] = useState('');
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [previewData, setPreviewData] = useState(null);
 
-  // Load normalized files on mount
   useEffect(() => {
     fetch('http://localhost:8000/normalized-files', {
       headers: {
@@ -35,16 +36,22 @@ const AggregatePage = () => {
 
     setLoading(true);
     setProgress(0);
+    setPreviewData(null);
+
     let apiDone = false;
     let animationDone = false;
     let toastMessage = null;
+    let preview = null;
 
     const finish = () => {
       setTimeout(() => {
         setLoading(false);
-        if (toastMessage) {
-          toast[toastMessage.type](toastMessage.message);
+        if (toastMessage?.type === 'success') {
+          toast.success(toastMessage.message);
+        } else if (toastMessage?.type === 'error') {
+          toast.error(toastMessage.message);
         }
+        if (preview) setPreviewData(preview);
       }, 300);
     };
 
@@ -71,10 +78,28 @@ const AggregatePage = () => {
         const data = await res.json();
         if (!res.ok) throw new Error(data.detail || 'Aggregation failed');
         toastMessage = { type: 'success', message: 'Aggregation complete!' };
-        console.log('Hash:', data.log_entry.hash);
+
+        // fetch aggregated preview
+        return fetch(
+          `http://localhost:8000/preview?filename=aggregated_${selectedFile}&source=processed`,
+          {
+            headers: {
+              role:
+                JSON.parse(localStorage.getItem('loggedInUser'))?.role ||
+                'Viewer',
+            },
+          }
+        );
+      })
+      .then((res) => res.json())
+      .then((data) => {
+        preview = data;
       })
       .catch((err) => {
-        toastMessage = { type: 'error', message: err.message };
+        toastMessage = {
+          type: 'error',
+          message: err.message || 'Aggregation failed',
+        };
       })
       .finally(() => {
         apiDone = true;
@@ -97,22 +122,25 @@ const AggregatePage = () => {
       <button
         onClick={handleAggregate}
         disabled={loading}
-        className={`w-full py-2 rounded-lg font-medium transition flex items-center justify-center ${
+        className={`w-full py-2 rounded-lg font-medium relative overflow-hidden transition flex items-center justify-center ${
           loading
-            ? 'bg-indigo-400 cursor-not-allowed'
+            ? 'bg-indigo-400 cursor-not-allowed text-white'
             : 'bg-indigo-600 hover:bg-indigo-700 text-white'
         }`}
       >
-        {loading ? 'Aggregating...' : 'Aggregate'}
-      </button>
-
-      {loading && (
-        <div className='w-full h-3 bg-gray-200 rounded-lg overflow-hidden'>
-          <div
-            className='h-full bg-indigo-600 rounded-lg transition-all duration-300 ease-in-out'
+        {loading && (
+          <span
+            className='absolute top-0 left-0 h-full bg-indigo-500 opacity-30 transition-all duration-300 ease-in-out'
             style={{ width: `${progress}%` }}
           />
-        </div>
+        )}
+        <span className='relative z-10'>
+          {loading ? 'Aggregating...' : 'Aggregate'}
+        </span>
+      </button>
+
+      {previewData && (
+        <PreviewTable columns={previewData.columns} rows={previewData.rows} />
       )}
     </div>
   );
