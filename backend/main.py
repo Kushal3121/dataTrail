@@ -157,8 +157,10 @@ async def aggregate_file(
 @app.get("/preview")
 def preview_file(
     filename: str,
-    role: str = Header(..., convert_underscores=False)
+    role: str = Header(..., convert_underscores=False),
+    source: str = "raw"
 ):
+    base_dir = "data/processed" if source == "processed" else "data/raw"
     path = os.path.join("data/raw", filename)
     if not os.path.exists(path):
         raise HTTPException(status_code=404, detail="File not found")

@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react';
 import { RefreshCw } from 'lucide-react';
 import toast from 'react-hot-toast';
 import FileDropdown from '../../components/FileDropDown';
+import PreviewTable from '../../components/PreviewTable';
 
 const TransformPage = () => {
   const [files, setFiles] = useState([]);
   const [selectedFile, setSelectedFile] = useState('');
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [previewData, setPreviewData] = useState(null);
 
   useEffect(() => {
     fetch('http://localhost:8000/raw-files', {
@@ -29,38 +31,68 @@ const TransformPage = () => {
 
     setLoading(true);
     setProgress(0);
+    setPreviewData(null);
+
+    let animationDone = false;
+    let apiDone = false;
+    let toastMessage = null;
+    let preview = null;
+
+    const finish = () => {
+      setTimeout(() => {
+        setLoading(false);
+        toast.success(toastMessage);
+        if (preview) setPreviewData(preview);
+      }, 300);
+    };
 
     const simulateProgress = setInterval(() => {
       setProgress((prev) => {
-        if (prev >= 100) {
+        const next = Math.min(prev + 10, 100);
+        if (next === 100) {
           clearInterval(simulateProgress);
-          return 100;
+          animationDone = true;
+          if (apiDone) finish();
         }
-        return prev + 10;
+        return next;
       });
     }, 100);
 
-    setTimeout(() => {
-      fetch(`http://localhost:8000/transform?filename=${selectedFile}`, {
-        method: 'POST',
-        headers: {
-          role:
-            JSON.parse(localStorage.getItem('loggedInUser'))?.role || 'Viewer',
-        },
+    fetch(`http://localhost:8000/transform?filename=${selectedFile}`, {
+      method: 'POST',
+      headers: {
+        role:
+          JSON.parse(localStorage.getItem('loggedInUser'))?.role || 'Viewer',
+      },
+    })
+      .then(async (res) => {
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || 'Transformation failed');
+        toastMessage = 'Transformation complete!';
+
+        // Fetch the transformed file (from /processed dir)
+        return fetch(
+          `http://localhost:8000/preview?filename=${selectedFile}&source=processed`,
+          {
+            headers: {
+              role:
+                JSON.parse(localStorage.getItem('loggedInUser'))?.role ||
+                'Viewer',
+            },
+          }
+        );
       })
-        .then(async (res) => {
-          const data = await res.json();
-          if (!res.ok) throw new Error(data.detail || 'Transformation failed');
-          toast.success('Transformation complete!');
-        })
-        .catch((err) => {
-          toast.error(err.message || 'Transformation failed');
-        })
-        .finally(() => {
-          setLoading(false);
-          setProgress(100);
-        });
-    }, 1200); // Simulate processing time
+      .then((res) => res.json())
+      .then((data) => {
+        preview = data;
+      })
+      .catch((err) => {
+        toastMessage = err.message || 'Transformation failed';
+      })
+      .finally(() => {
+        apiDone = true;
+        if (progress === 100) finish();
+      });
   };
 
   return (
@@ -78,22 +110,26 @@ const TransformPage = () => {
       <button
         onClick={handleTransform}
         disabled={loading}
-        className={`w-full py-2 rounded-lg font-medium transition flex items-center justify-center ${
-          loading
-            ? 'bg-indigo-400 cursor-not-allowed text-white'
-            : 'bg-indigo-600 hover:bg-indigo-700 text-white'
-        }`}
+        className={`w-full py-2 rounded-lg font-medium relative overflow-hidden transition flex items-center justify-center
+          ${
+            loading
+              ? 'bg-indigo-400 text-white cursor-not-allowed'
+              : 'bg-indigo-600 hover:bg-indigo-700 text-white'
+          }`}
       >
-        {loading ? 'Transforming...' : 'Transform'}
-      </button>
-
-      {loading && (
-        <div className='w-full h-3 bg-gray-200 rounded-lg overflow-hidden'>
-          <div
-            className='h-full bg-indigo-600 rounded-lg transition-all duration-300 ease-in-out'
+        {loading && (
+          <span
+            className='absolute top-0 left-0 h-full bg-indigo-500 opacity-30 transition-all duration-300 ease-in-out'
             style={{ width: `${progress}%` }}
           />
-        </div>
+        )}
+        <span className='relative z-10'>
+          {loading ? 'Transforming...' : 'Transform'}
+        </span>
+      </button>
+
+      {previewData && (
+        <PreviewTable columns={previewData.columns} rows={previewData.rows} />
       )}
     </div>
   );
