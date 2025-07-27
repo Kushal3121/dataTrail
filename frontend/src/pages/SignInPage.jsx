@@ -10,7 +10,7 @@ const SignInPage = () => {
 
   const [form, setForm] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false); // ✅ New loading state
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -33,9 +33,9 @@ const SignInPage = () => {
   };
 
   return (
-    <div className='min-h-screen flex items-center justify-center bg-gray-50 px-4'>
-      <div className='bg-white shadow-lg rounded-lg p-8 w-full max-w-md'>
-        <h2 className='text-2xl font-bold mb-6 text-center'>
+    <div className='min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1e293b] to-[#0f172a] text-gray-100 px-4'>
+      <div className='bg-white shadow-2xl rounded-xl p-10 w-full max-w-md text-gray-800'>
+        <h2 className='text-3xl font-extrabold mb-6 text-center text-indigo-700'>
           Sign In to DataTrail
         </h2>
 
@@ -44,8 +44,8 @@ const SignInPage = () => {
           name='username'
           placeholder='Username'
           onChange={handleChange}
-          className='w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg'
           disabled={loading}
+          className='w-full mb-4 px-4 py-3 border border-gray-300 rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-indigo-500'
         />
 
         <input
@@ -53,8 +53,8 @@ const SignInPage = () => {
           name='password'
           placeholder='Password'
           onChange={handleChange}
-          className='w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg'
           disabled={loading}
+          className='w-full mb-4 px-4 py-3 border border-gray-300 rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-indigo-500'
         />
 
         {error && (
@@ -64,11 +64,11 @@ const SignInPage = () => {
         <button
           onClick={handleSubmit}
           disabled={loading}
-          className={`w-full ${
+          className={`w-full text-white font-semibold py-3 rounded-lg transition flex items-center justify-center shadow-lg ${
             loading
               ? 'bg-indigo-400 cursor-not-allowed'
               : 'bg-indigo-600 hover:bg-indigo-700'
-          } text-white font-semibold py-2 rounded-lg transition flex items-center justify-center`}
+          }`}
         >
           {loading ? (
             <div className='h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin'></div>
