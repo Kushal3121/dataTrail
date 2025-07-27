@@ -2,7 +2,7 @@ from fastapi import FastAPI, File, UploadFile, HTTPException, Header
 from fastapi.responses import JSONResponse
 import os
 import pandas as pd
-from provenance_tracker import clean_data, log_transformation, load_provenance_log, compute_sha256
+from provenance_tracker import clean_data, log_transformation, load_provenance_log, compute_sha256, normalize_data, aggregate_data
 from utils.roles import authorize_action
 from fastapi.middleware.cors import CORSMiddleware
 
