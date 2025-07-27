@@ -17,16 +17,6 @@ DataTrail is a full-stack data transformation platform built with **FastAPI** an
 
 ---
 
-### 🧱 Tech Stack
-
-| Frontend        | Backend          | Utilities        |
-| --------------- | ---------------- | ---------------- |
-| React.js (Vite) | FastAPI (Python) | Pandas, Hashlib  |
-| Tailwind CSS    | CORS Middleware  | react-hot-toast  |
-| Headless UI     | REST API         | Heroicons/Lucide |
-
----
-
 ### 🔐 Roles & Permissions
 
 | Action       | Admin | Analyst | Viewer |
