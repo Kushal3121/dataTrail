@@ -1,0 +1,601 @@
+Order ID,Order Date,Customer ID,Product Name,Category,Sub-Category,Region,Country,City,Quantity,Unit Price,Discount (%),Total Sales,Profit,Shipping Cost,Order Priority,Sales Rep,Warehouse Code
+O-100001,2024-11-14,C-3881,Including X,Furniture,Tables,Asia,China,Robertsview,15,524.47,0.14,6765.66,,,High,Sylvia Gordon,W2
+O-100002,2025-05-06,C-7689,Something Plus,Apparel,Jackets,North America,USA,Port Joshua,10,817.23,0.23,6292.67,,9.59,Medium,Kelly Boyle,W1
+O-100003,2025-03-13,C-6223,Record Pro,Apparel,Jackets,Europe,UK,Stevenfurt,12,958.33,0.29,8164.97,1009.28,6.9,Medium,Cynthia Wang,W2
+O-100004,2024-07-28,C-7682,Today X,Apparel,Shirts,North America,USA,Lake Geraldberg,8,433.94,0.05,3297.94,409.1,21.74,Medium,Jason Griffith,W1
+O-100005,2024-08-29,C-5901,Look Plus,Furniture,Tables,Europe,UK,Ericbury,8,635.2,0.22,3963.65,659.49,34.71,High,,W4
+O-100006,2024-11-29,C-2057,Partner Plus,Furniture,Tables,North America,Canada,Pottsview,15,562.7,0.17,7005.61,1078.83,13.97,High,Brandon Rodriguez,
+O-100007,2024-11-19,C-6260,Recognize X,Furniture,Tables,North America,USA,Lynnstad,14,747.39,,8370.77,2276.19,6.52,Low,David Maddox,W4
+O-100008,2025-01-11,C-8883,Blue X,Furniture,Tables,Europe,France,South Brianna,1,298.26,0.04,286.33,85.75,37.9,Medium,,W3
+O-100009,2024-12-19,C-5008,Happen Plus,Furniture,Tables,North America,Canada,Ryanton,4,76.92,0.09,279.99,,42.17,,Michelle Dean,W3
+O-100010,2025-05-07,C-3224,Office Mini,Furniture,Sofas,North America,USA,Johnsonfort,16,432.03,0.07,6428.61,1623.8,,,Sherri Johnson,W3
+O-100011,2025-02-25,C-2728,Price X,Apparel,Shirts,North America,USA,Port Luisview,8,691.19,0.13,4810.68,778.96,47.88,Low,Patricia Duffy,W2
+O-100012,2024-11-23,C-3476,Learn Mini,Furniture,Chairs,North America,USA,Port Chelseystad,17,301.69,0.18,4205.56,773.34,46.51,,,W2
+O-100013,2025-02-15,C-9219,I Mini,Furniture,Chairs,Asia,Japan,Williamsmouth,13,682.5,0.29,6299.47,,32.53,Low,Joshua Morris,W3
+O-100014,2025-06-29,C-4215,Teacher Plus,Apparel,Shoes,Europe,UK,Gloriamouth,9,354.2,0.23,2454.61,,13.39,High,Alexander Ford,
+O-100015,2025-07-26,C-6267,Debate Mini,Apparel,Shirts,Asia,China,Cynthiafurt,16,799.05,0.26,9460.75,,37.31,,Adam Collins,W1
+O-100016,2025-07-11,C-9860,Economy Plus,Electronics,Phones,North America,Canada,Clarkport,12,459.21,0.27,4022.68,,13.87,,Christian Alexander,W2
+O-100017,2024-08-21,C-5780,Stage Plus,Apparel,Shirts,North America,Canada,Hudsonbury,2,115.43,,170.84,22.44,7.11,Low,Denise Chavez,W1
+O-100018,2025-06-06,C-4309,Bring Plus,Furniture,Tables,Europe,Germany,Stephensonshire,8,781.41,0.06,5876.2,1669.44,30.78,Medium,Aaron Richardson,
+O-100019,2025-06-01,C-1770,Sea X,Apparel,Shirts,North America,USA,Katrinaside,15,766.39,0.21,9081.72,2578.15,27.6,Medium,Brian Lee,W2
+O-100020,2025-04-21,C-7487,Line Mini,Electronics,Laptops,Asia,Japan,Jessemouth,18,886.27,,13878.99,2393.19,14.77,Medium,Tracey Thomas,W1
+O-100021,2025-05-07,C-6107,Trouble Mini,Apparel,Shirts,Europe,Germany,Moonland,10,440.84,0.28,3174.05,746.48,49.37,,Alexandra Werner,W3
+O-100022,2025-02-19,C-1037,Loss Plus,Apparel,Shirts,Asia,India,Port Jenniferport,8,729.28,0.13,5075.79,1136.25,28.92,Medium,James Henderson,W1
+O-100023,2024-10-27,C-3375,All Mini,Electronics,Tablets,North America,USA,Lake Ronaldfurt,7,315.14,0.05,2095.68,513.1,41.66,,,W4
+O-100024,2024-11-07,C-5288,Region Pro,Furniture,Tables,Asia,India,West Zachary,3,380.11,0.1,1026.3,126.58,6.7,,Ronald Lara,
+O-100025,2024-09-25,C-1486,Language Mini,Electronics,Tablets,Asia,Japan,Deanport,9,532.29,0.22,3736.68,797.65,,Medium,Anna Weeks,
+O-100026,2025-05-30,C-5948,International Plus,Apparel,Jackets,Europe,UK,Vegachester,8,57.75,,406.56,73.02,37.5,,Robin Johnson,W4
+O-100027,2024-09-19,C-5742,Leader X,Furniture,Chairs,North America,USA,New Rachelmouth,7,830.6,0.06,5465.35,726.26,5.36,Medium,Carolyn Patterson,W2
+O-100028,2025-02-17,C-3009,Respond Mini,Furniture,Sofas,Asia,China,South Peggy,12,475.52,,4564.99,988.91,15.51,Low,,W3
+O-100029,2024-09-17,C-2973,Past Plus,Electronics,Laptops,Asia,China,Lake Jamesburgh,8,81.78,0.26,484.14,66.11,28.86,Medium,Michael Nguyen,W1
+O-100030,2024-11-12,C-6771,Property Mini,Electronics,Tablets,Asia,China,North Danatown,1,333.81,0.11,297.09,35.47,46.7,,Kristen Moore,W1
+O-100031,2025-07-27,C-3821,Political Mini,Apparel,Jackets,Asia,India,Allenberg,9,656.8,0.01,5852.09,1346.56,5.71,Low,Jonathan Robinson,W1
+O-100032,2025-02-19,C-3202,While Pro,Electronics,Phones,North America,Canada,Christopherbury,18,908.33,0.17,13570.45,3095.03,22.7,Low,Adam Hoffman,W1
+O-100033,2024-10-06,C-6467,Just Plus,Furniture,Sofas,Europe,Germany,New Catherinemouth,3,473.46,0.1,1278.34,276.34,,High,,W2
+O-100034,2024-09-12,C-8681,Learn X,Apparel,Shirts,Europe,France,Jenniferview,15,935.42,,13610.36,2447.31,,Low,Alan Mcbride,W1
+O-100035,2024-08-30,C-4720,Under Mini,Furniture,Tables,Europe,Germany,Lake John,4,444.69,0.07,1654.25,,40.58,Medium,Angela Chapman,W2
+O-100036,2024-10-20,C-4243,Free Plus,Furniture,Tables,North America,Canada,Port Stephanie,9,618.06,0.11,4950.66,784.49,10.98,High,Jason Ibarra,W1
+O-100037,2024-10-13,C-1062,Them Plus,Apparel,Shoes,Europe,UK,Taylorport,8,523.2,0.01,4143.74,918.7,33.61,High,Amber Williams,W4
+O-100038,2024-12-23,C-6268,None Mini,Electronics,Phones,Asia,Japan,Charleston,15,455.99,0.07,6361.06,,,Low,Aaron Goodman,W4
+O-100039,2024-10-26,C-2449,Heavy Pro,Apparel,Jackets,Europe,Germany,Boothbury,1,88.54,0.02,86.77,10.75,30.58,Medium,,W4
+O-100040,2025-04-14,C-1382,Two Mini,Furniture,Chairs,Asia,China,West Mary,2,69.41,0.07,129.1,19.64,,,Robert Holt,W1
+O-100041,2024-11-27,C-2603,Nation Mini,Apparel,Shirts,North America,USA,East Mitchellfurt,5,517.82,0.25,1941.83,293.48,,Medium,,W4
+O-100042,2025-04-06,C-5198,Everyone Pro,Electronics,Tablets,Europe,France,West Whitneymouth,5,354.21,0.3,1239.73,130.52,22.38,,Tommy Blankenship,W2
+O-100043,2024-10-16,C-1241,Small Mini,Apparel,Jackets,North America,Canada,Petersonfort,11,702.32,0.09,7030.22,958.92,,Low,Jeffrey Cook,W4
+O-100044,2025-01-23,C-5597,Claim Plus,Furniture,Chairs,North America,Canada,South Garyfurt,12,695.13,0.21,6589.83,995.18,34.53,Low,,W3
+O-100045,2025-01-26,C-2502,Less X,Electronics,Phones,North America,USA,Danielchester,13,424.49,,4028.41,1134.6,20.84,High,Chad Howell,
+O-100046,2024-10-06,C-3246,Film Mini,Furniture,Chairs,Asia,Japan,Kristinburgh,7,707.2,0.11,4405.86,,,Low,Billy Stephenson,W3
+O-100047,2024-08-26,C-1909,Conference Pro,Apparel,Jackets,Asia,Japan,Walkerbury,19,696.92,0.08,12182.16,2612.5,32.88,Medium,Nicole Bell,W4
+O-100048,2025-07-22,C-9312,Himself Plus,Electronics,Tablets,Europe,Germany,West Mary,14,907.58,0.08,11689.63,1461.73,13.0,Low,Ashley Moore,W2
+O-100049,2024-08-14,C-1394,Spring Pro,Electronics,Laptops,North America,USA,North Alicia,4,629.12,0.13,2189.34,341.63,34.91,Low,Rachel Fox,W2
+O-100050,2025-07-01,C-6679,State Pro,Furniture,Chairs,Asia,China,Gonzalezton,5,351.25,0.04,1686.0,,17.58,Low,Francis Osborn,W1
+O-100051,2025-03-30,C-9404,Pay X,Electronics,Tablets,Europe,Germany,Lake Bryanmouth,3,793.44,,2356.52,305.43,22.78,,Janet Mason,W1
+O-100052,2025-07-25,C-9964,Against X,Furniture,Sofas,Europe,Germany,Johnview,13,707.06,0.08,8456.44,1968.29,48.14,High,Jessica Rodriguez,W3
+O-100053,2024-12-16,C-1400,Number X,Furniture,Sofas,Europe,UK,New Angie,14,795.22,0.01,11021.75,1707.76,13.74,High,Derek Christensen,W4
+O-100054,2025-07-20,C-4076,Production Pro,Furniture,Sofas,Europe,Germany,Jenniferburgh,8,836.71,0.28,4819.45,917.13,21.29,Medium,Daniel Johnson,W2
+O-100055,2025-01-03,C-9570,Blood Mini,Apparel,Shirts,North America,Canada,Port Debra,1,311.11,0.08,286.22,75.91,32.99,Medium,,W1
+O-100056,2024-09-19,C-2590,Although Pro,Apparel,Jackets,Europe,UK,Port Jessica,15,503.16,,5886.97,1246.17,41.93,Medium,,W2
+O-100057,2024-09-17,C-4393,Friend X,Apparel,Shirts,North America,USA,Richardstad,19,663.61,0.03,12230.33,1991.32,46.93,Medium,Joseph Wright,W4
+O-100058,2024-12-17,C-6673,Scientist Mini,Apparel,Shirts,Europe,Germany,Port Jennifer,20,295.96,0.15,5031.32,1388.75,30.0,High,Kayla Norris,
+O-100059,2025-05-13,C-1672,Accept Pro,Apparel,Shirts,Asia,China,West Jonathan,15,32.57,0.05,464.12,68.51,22.55,,Christopher Clarke,W2
+O-100060,2025-03-28,C-8899,Technology Pro,Apparel,Jackets,North America,Canada,Port Robin,14,719.85,0.3,7054.53,1291.75,22.51,High,Peter Owens,W1
+O-100061,2025-06-23,C-8859,High Plus,Electronics,Laptops,North America,USA,Stokeston,8,44.28,0.23,272.76,37.57,9.15,High,,
+O-100062,2025-03-25,C-4581,Down X,Apparel,Shoes,North America,USA,North Tracybury,20,92.69,0.07,1724.03,196.9,42.75,Medium,Jared Berry,
+O-100063,2025-06-26,C-4328,Technology X,Electronics,Laptops,Europe,Germany,South Brianchester,11,798.92,0.02,8612.36,1104.81,32.2,,,W1
+O-100064,2025-01-08,C-2856,Enter Plus,Furniture,Tables,Asia,Japan,South Chelsealand,9,753.97,0.05,6446.44,995.01,,Low,Michael Miranda,W3
+O-100065,2025-04-06,C-6327,Record Pro,Electronics,Laptops,Europe,France,Lake Marystad,12,891.77,,9417.09,1977.53,37.47,Low,Julia Brooks,
+O-100066,2024-08-09,C-7652,Herself Mini,Apparel,Shoes,Europe,UK,North Beverly,9,460.49,,3066.86,865.35,15.55,Low,Christopher Rodriguez,W2
+O-100067,2024-09-10,C-2894,Car Mini,Furniture,Chairs,North America,Canada,New Nathanfort,16,674.98,0.19,8747.74,,,Medium,Jeremy Rowland,W1
+O-100068,2025-03-25,C-2279,Power Plus,Apparel,Jackets,North America,Canada,East Ericton,10,314.69,0.04,3021.02,419.64,23.87,High,Paula Cortez,W1
+O-100069,2024-10-07,C-3725,Or Mini,Electronics,Phones,North America,Canada,Johnfurt,15,775.71,0.11,10355.73,1176.33,9.97,Medium,Eric Cooper,W2
+O-100070,2024-10-11,C-4966,Especially Pro,Electronics,Laptops,Asia,India,Pearsonmouth,9,433.23,0.11,3470.17,884.21,48.98,Low,Scott Olson,W4
+O-100071,2024-11-26,C-7786,Lay Plus,Furniture,Tables,North America,Canada,Lake Bobbyburgh,4,639.05,0.29,1814.9,358.23,39.81,High,,
+O-100072,2024-10-06,C-7105,Service Plus,Electronics,Tablets,North America,Canada,North Gregoryton,13,840.94,0.14,9401.71,,35.4,Medium,Susan Freeman,
+O-100073,2025-05-19,C-4022,History Mini,Electronics,Laptops,North America,USA,Gardnerland,1,857.87,0.15,729.19,141.31,,Medium,Cassandra Banks,W3
+O-100074,2024-10-05,C-6574,These X,Apparel,Jackets,Europe,France,Shannonview,12,105.85,0.28,914.54,237.17,6.86,High,Sandra Mendez,W2
+O-100075,2025-05-07,C-4805,Project Mini,Furniture,Sofas,North America,Canada,Donnahaven,7,238.56,0.18,1369.33,208.93,33.84,High,Patricia Ali,W3
+O-100076,2024-10-14,C-3601,Phone Pro,Furniture,Tables,North America,USA,South Felicia,15,531.15,0.26,5895.77,1056.8,22.96,Medium,Katherine Rice,W3
+O-100077,2025-06-22,C-5454,Describe Mini,Furniture,Sofas,North America,Canada,Port Edward,10,401.99,0.02,3939.5,1025.96,,High,Eric Diaz,W1
+O-100078,2024-12-13,C-3168,Specific Mini,Electronics,Laptops,North America,USA,North Kyleport,9,503.76,0.16,3808.43,,,High,Emily Carson,W1
+O-100079,2025-03-19,C-8490,Behind Pro,Apparel,Shoes,North America,Canada,Finleyville,11,112.51,0.17,1027.22,175.97,45.3,High,Shelby Martin,W1
+O-100080,2025-06-13,C-7894,Particularly Plus,Furniture,Chairs,North America,USA,South Sharonbury,9,232.25,0.24,1588.59,192.15,34.08,High,Mary Webb,W1
+O-100081,2025-05-21,C-8504,Ask Plus,Furniture,Sofas,Asia,Japan,Kaylahaven,18,695.87,0.07,11648.86,1711.23,,Low,Christine Cohen,W1
+O-100082,2024-08-02,C-5615,Positive Pro,Furniture,Sofas,Europe,UK,Lake Zacharyport,4,54.23,,156.18,32.54,41.04,,Chad Parks,W4
+O-100083,2024-08-26,C-8343,Spend X,Furniture,Sofas,North America,Canada,Kaitlynfurt,1,81.34,0.03,78.9,,48.8,Medium,Scott Mccullough,
+O-100084,2025-02-11,C-2886,Child X,Apparel,Jackets,Europe,Germany,Andrefort,7,657.69,0.18,3775.14,945.83,12.46,Medium,,
+O-100085,2025-07-23,C-7087,Big X,Furniture,Sofas,North America,USA,South Andrewfurt,6,144.64,0.04,833.13,99.93,12.98,High,Brittany Thomas,W1
+O-100086,2024-09-30,C-3238,Bring X,Electronics,Phones,Europe,France,Ronaldbury,10,324.43,0.03,3146.97,383.49,,Low,Mrs. Chelsea Osborne,W1
+O-100087,2025-05-16,C-6902,Half X,Electronics,Tablets,Asia,India,West Richard,15,354.86,0.29,3779.26,461.06,41.63,Medium,,W1
+O-100088,2024-10-10,C-9765,Art Mini,Furniture,Sofas,Europe,UK,New Jordanmouth,18,267.92,0.03,4677.88,,25.66,Low,Douglas Price,W4
+O-100089,2024-12-09,C-1204,Stuff Pro,Electronics,Laptops,Europe,Germany,East Ashleyfort,7,782.18,0.15,4653.97,885.96,49.82,,Mary Le,W3
+O-100090,2025-04-16,C-9757,Present Plus,Furniture,Tables,North America,USA,New Brittany,16,28.2,0.23,347.42,72.93,23.13,,Ryan Campos,
+O-100091,2025-03-30,C-8878,Wait Pro,Furniture,Sofas,Europe,UK,Davisburgh,2,689.88,0.09,1255.58,,33.39,Medium,Bradley Lewis,W2
+O-100092,2025-07-07,C-4267,Friend X,Furniture,Chairs,North America,Canada,New Patrick,14,904.09,0.12,11138.39,2031.61,46.12,Medium,Heather Clark,W4
+O-100093,2024-09-24,C-1011,Camera X,Apparel,Shirts,Asia,China,Cruzfort,10,731.37,,5485.27,1579.37,8.37,Medium,Jean Barton,
+O-100094,2024-12-28,C-1798,Else Mini,Apparel,Shoes,Asia,China,East Michael,6,245.11,0.15,1250.06,210.45,46.37,High,Laura Murray,W4
+O-100095,2025-06-27,C-1675,Grow Pro,Electronics,Tablets,North America,USA,South Terryport,20,492.45,0.12,8667.12,1226.54,39.25,Medium,,
+O-100096,2024-09-14,C-5711,Item Pro,Apparel,Jackets,North America,USA,Rodriguezhaven,13,613.42,0.08,7336.5,1825.11,,High,Hayley Gilmore,
+O-100097,2025-05-07,C-5233,Plan Plus,Electronics,Tablets,Asia,Japan,South Rebekahhaven,13,363.23,,3352.61,459.03,30.49,High,Willie Mccarthy,W4
+O-100098,2024-11-18,C-9464,Them Plus,Electronics,Laptops,Asia,India,Larrytown,16,555.11,0.03,8615.31,1374.08,29.11,,,W2
+O-100099,2025-04-27,C-7434,Good Plus,Furniture,Chairs,Asia,Japan,Prattbury,4,205.3,0.04,788.35,225.22,38.49,High,Christopher Dennis,
+O-100100,2025-01-12,C-9918,Marriage X,Apparel,Jackets,North America,USA,East Anneview,9,920.21,,6956.79,1115.42,14.07,High,Stephen Romero,W1
+O-100101,2024-09-15,C-9844,Billion Pro,Furniture,Tables,Europe,UK,Brianville,19,72.28,,1029.99,269.78,23.89,,Jesse Wallace,W1
+O-100102,2024-10-05,C-5017,Entire Plus,Electronics,Phones,North America,USA,Smithland,8,604.54,0.08,4449.41,742.24,29.56,Medium,Patricia Thomas,
+O-100103,2025-07-01,C-4741,Realize X,Apparel,Shirts,Asia,China,Roweton,13,275.46,0.17,2972.21,448.58,46.2,Medium,Hannah Edwards,W1
+O-100104,2024-11-13,C-2775,Strong X,Electronics,Tablets,North America,Canada,New Danielstad,20,836.49,0.29,11878.16,,35.59,Low,Karla Jones,W3
+O-100105,2025-05-06,C-8531,Police Mini,Electronics,Laptops,Asia,Japan,West Steven,4,523.28,0.21,1653.56,282.67,26.49,Low,Stacy Lam,W3
+O-100106,2025-04-22,C-4831,Air Mini,Apparel,Shoes,North America,Canada,North Lindsey,15,405.68,0.09,5537.53,,,Medium,Ralph Greene,W2
+O-100107,2025-05-08,C-2083,Amount Pro,Furniture,Sofas,North America,USA,Thompsonmouth,20,61.01,0.15,1037.17,168.58,25.04,Low,Matthew Gray,W4
+O-100108,2024-10-18,C-2822,Finally X,Furniture,Sofas,Asia,India,North Tammyland,14,523.65,0.0,7331.1,1992.97,14.0,High,Cody Valentine,W4
+O-100109,2024-12-11,C-7318,Everything Mini,Apparel,Shoes,Asia,China,Andrewstad,20,281.93,0.24,4285.34,469.93,13.39,,Caleb Garcia,W4
+O-100110,2025-07-22,C-1259,Help X,Furniture,Tables,North America,Canada,Alexandriaport,8,720.73,0.19,4670.33,964.25,,High,Janet Spence,W1
+O-100111,2025-05-09,C-5631,Country Plus,Electronics,Phones,Europe,Germany,Rodriguezborough,10,195.99,,1685.51,267.41,19.27,,Mr. Arthur Mills,W4
+O-100112,2025-02-07,C-4882,Administration Mini,Electronics,Laptops,Europe,Germany,New Jamie,1,570.33,0.26,422.04,61.08,23.59,Low,Timothy Medina,W2
+O-100113,2024-10-14,C-8278,Speech Pro,Electronics,Laptops,North America,Canada,Averymouth,8,686.79,0.17,4560.29,520.94,,Medium,Crystal Hernandez,
+O-100114,2024-10-18,C-7126,Beyond Mini,Electronics,Tablets,North America,Canada,Aprilfort,10,415.08,0.25,3113.1,561.2,49.23,,Katelyn Johnson,
+O-100115,2024-12-05,C-5470,Them Pro,Apparel,Jackets,Europe,France,Scottland,6,536.97,0.14,2770.77,348.02,30.22,High,Melissa Stewart,W3
+O-100116,2024-12-15,C-9103,Can X,Electronics,Tablets,Asia,China,East Randy,16,919.09,0.22,11470.24,1585.8,36.6,High,Melanie Chambers,W3
+O-100117,2024-08-09,C-7752,Culture Mini,Furniture,Chairs,Europe,Germany,East Meredithville,3,425.03,,1147.58,220.33,33.31,Medium,,W4
+O-100118,2024-08-23,C-5899,Coach Plus,Furniture,Chairs,North America,Canada,Port Cynthia,2,170.59,0.19,276.36,68.92,45.0,,Anthony Brewer,W1
+O-100119,2025-03-22,C-9585,Around Plus,Furniture,Sofas,Asia,Japan,Allenview,14,588.75,0.29,5852.17,,8.99,,Miss Courtney Lloyd MD,W1
+O-100120,2025-03-24,C-6271,Participant Mini,Apparel,Shirts,Asia,China,Wilsonfurt,9,383.78,0.1,3108.62,608.57,5.24,Medium,Rickey King,W3
+O-100121,2025-05-09,C-5514,Toward Mini,Furniture,Sofas,North America,USA,North Juliechester,13,225.67,,2816.36,,8.71,Medium,Frank Jackson,W2
+O-100122,2024-09-11,C-2689,Film Pro,Furniture,Chairs,North America,USA,East Jessica,19,405.66,0.18,6320.18,1308.41,22.32,High,Michele Smith,
+O-100123,2024-10-11,C-8195,Finish X,Electronics,Phones,North America,Canada,North Scott,8,237.06,0.16,1593.04,179.04,41.62,Medium,Joseph Vasquez,W4
+O-100124,2024-09-02,C-4075,Rule X,Electronics,Tablets,Europe,France,Port Kathy,3,311.01,0.28,671.78,99.47,31.54,,,W4
+O-100125,2024-12-12,C-4983,Dinner X,Apparel,Shoes,Asia,Japan,Angelaburgh,1,66.57,0.16,55.92,,14.76,Low,,W2
+O-100126,2024-12-01,C-9347,Exist X,Apparel,Jackets,North America,Canada,Lake Nicholas,8,618.56,0.06,4651.57,827.83,37.65,Medium,Terry Davis,W2
+O-100127,2025-04-04,C-7565,State Pro,Furniture,Sofas,Asia,China,Port Jessica,1,739.64,0.13,643.49,168.89,28.85,High,Daryl Bailey,W4
+O-100128,2025-03-10,C-3491,After Plus,Apparel,Jackets,Asia,Japan,Katherineborough,3,769.67,0.12,2031.93,305.12,7.91,Medium,Amber Crosby,W2
+O-100129,2025-04-05,C-9035,It Pro,Furniture,Sofas,Asia,Japan,Matthewview,16,625.6,,9509.12,1987.24,7.9,Medium,Zachary Walker,W3
+O-100130,2024-10-19,C-9181,Other Plus,Apparel,Shoes,Asia,China,New Oscar,8,243.78,0.27,1423.68,,30.57,Medium,Joseph Martinez,W4
+O-100131,2024-08-23,C-1961,Certain Mini,Electronics,Tablets,North America,USA,South Aaronburgh,5,617.51,0.28,2223.04,527.61,,Low,Jeff Lee,W4
+O-100132,2025-01-23,C-3992,Tend Plus,Electronics,Phones,North America,Canada,West Scottborough,20,463.84,0.26,6864.83,,8.74,High,Morgan Johnson,W4
+O-100133,2025-03-10,C-7558,Claim Mini,Furniture,Tables,North America,USA,Craneton,13,249.96,0.23,2502.1,419.66,,Low,Eric Wilcox,W1
+O-100134,2024-12-21,C-9026,Night X,Electronics,Laptops,Asia,India,Davidfort,16,195.72,0.04,3006.26,330.2,28.82,High,Michael Weaver,W1
+O-100135,2024-11-19,C-6020,Maintain X,Electronics,Phones,Europe,UK,New Kevin,14,781.01,,8200.6,1456.48,47.72,Low,Lee Solis,W3
+O-100136,2025-01-04,C-8934,Market X,Furniture,Sofas,Asia,Japan,North Michaelchester,10,681.29,0.16,5722.84,,40.54,,James Adams,W4
+O-100137,2025-05-24,C-3390,Hot Plus,Apparel,Shoes,Asia,Japan,West Jenna,10,300.87,0.2,2406.96,612.85,,Low,,W4
+O-100138,2025-01-21,C-6910,Heavy Mini,Electronics,Phones,Europe,UK,South Justin,7,118.13,0.13,719.41,130.07,47.52,Low,,W4
+O-100139,2025-04-26,C-1888,Into Mini,Furniture,Sofas,North America,Canada,Escobarside,5,962.14,,3944.77,972.37,38.29,Low,,W1
+O-100140,2025-01-07,C-2858,Gas X,Furniture,Sofas,Europe,UK,Deborahville,18,116.12,,1693.03,357.39,19.4,,Kevin Garcia,W1
+O-100141,2025-04-15,C-3122,Student Plus,Apparel,Shirts,North America,USA,New Andre,18,496.13,0.14,7680.09,1291.59,15.54,Medium,Dawn Smith,W3
+O-100142,2025-07-21,C-4028,Pull X,Apparel,Shoes,North America,USA,Jamestown,3,96.69,0.01,287.17,74.11,20.46,High,Michael Solomon,W2
+O-100143,2025-01-30,C-2265,Probably X,Apparel,Jackets,North America,USA,Timothymouth,7,668.25,0.11,4163.2,439.29,33.48,Medium,Kevin Hill,W1
+O-100144,2025-03-24,C-6936,Officer Pro,Furniture,Sofas,Europe,France,Angelatown,1,869.46,0.09,791.21,206.15,39.39,Low,Mr. David Rodriguez,
+O-100145,2024-12-15,C-4412,Green Pro,Electronics,Laptops,Asia,India,Port Kimberg,14,141.75,0.23,1528.07,204.85,47.52,Medium,,
+O-100146,2025-05-11,C-4440,One Mini,Furniture,Tables,Europe,France,West Tylermouth,12,243.6,,2192.4,429.33,37.59,Medium,Jonathan Williams,W3
+O-100147,2025-06-29,C-4740,Behavior Plus,Furniture,Sofas,Asia,India,West Charlesport,19,123.17,0.14,2012.6,271.75,12.22,High,Angela Jackson,
+O-100148,2024-12-26,C-7743,Population X,Electronics,Tablets,North America,USA,Christopherborough,5,274.5,0.08,1262.7,303.98,40.21,Medium,,
+O-100149,2024-09-28,C-5276,Forget Mini,Apparel,Shirts,Europe,France,New Rebecca,18,308.61,0.15,4721.73,,39.26,,Andrea Molina,W4
+O-100150,2024-09-10,C-5104,North Mini,Apparel,Shirts,North America,USA,New Aprilport,4,632.05,0.27,1845.59,375.85,20.76,Medium,Timothy Cook,W1
+O-100151,2025-03-12,C-5003,Fight Plus,Apparel,Jackets,North America,USA,North Gregory,10,64.47,0.08,593.12,88.45,39.14,High,,W4
+O-100152,2024-09-16,C-8341,Hundred X,Electronics,Tablets,North America,USA,Lake Kimberlyport,19,345.73,0.01,6503.18,1151.68,27.37,High,Erika Vargas,W4
+O-100153,2024-09-11,C-3126,Rest Pro,Furniture,Sofas,Europe,UK,Frankhaven,2,490.07,0.11,872.32,234.61,39.77,Medium,Adam Lopez,W3
+O-100154,2024-08-14,C-1142,Citizen Mini,Electronics,Tablets,Asia,China,Nicholasview,8,494.13,0.08,3636.8,1057.13,13.26,High,Carolyn Schultz,W4
+O-100155,2025-01-30,C-9039,Democrat X,Furniture,Sofas,Europe,UK,New Allen,3,922.89,0.2,2214.94,654.58,15.67,High,Ashley Perez,W2
+O-100156,2025-03-04,C-5906,Worker Mini,Furniture,Chairs,North America,Canada,South Brooke,3,841.06,0.02,2472.72,343.31,38.23,Low,Laura Curtis,W4
+O-100157,2025-01-21,C-7709,Building Pro,Furniture,Tables,Asia,Japan,Lake Zachary,17,945.85,0.23,12381.18,3702.55,,Medium,,W1
+O-100158,2024-09-19,C-1837,Season Plus,Apparel,Shirts,North America,USA,Ronaldberg,11,471.39,0.16,4355.64,1117.96,20.41,Low,Sandra Smith,W2
+O-100159,2025-07-24,C-1518,Beyond Plus,Apparel,Shirts,Europe,UK,Lake Gloriahaven,18,489.09,0.06,8275.4,,40.15,Low,,W1
+O-100160,2024-08-28,C-2415,Bad Mini,Furniture,Sofas,North America,Canada,South Andrewshire,7,469.44,0.17,2727.45,434.93,,High,Julie Roberts,W2
+O-100161,2025-07-15,C-1091,Leader Mini,Furniture,Sofas,Asia,Japan,North Angela,6,836.66,0.23,3865.37,981.55,38.69,High,Heather Kemp,W3
+O-100162,2025-03-28,C-2176,Sometimes Plus,Apparel,Shirts,Europe,France,East Amyfurt,12,298.39,0.13,3115.19,,29.74,Low,,W4
+O-100163,2024-10-25,C-4954,Throughout Mini,Furniture,Chairs,North America,USA,Jennaton,1,265.79,0.01,263.13,71.99,38.99,Medium,Elijah Matthews,W1
+O-100164,2024-08-30,C-7987,Her Pro,Furniture,Tables,Europe,Germany,Pamelaborough,15,879.0,0.25,9888.75,1782.21,38.79,Medium,,
+O-100165,2024-07-29,C-3545,Choice X,Furniture,Sofas,North America,Canada,Dennisview,17,463.08,0.08,7242.57,2162.8,31.28,Low,Micheal Mcgee,W3
+O-100166,2025-02-09,C-6560,Sell Mini,Electronics,Laptops,Asia,China,West Johnton,6,201.02,0.04,1157.88,121.99,23.98,High,Ebony Martinez,W2
+O-100167,2025-06-13,C-9307,Pass Plus,Electronics,Phones,Asia,India,Danielville,4,123.89,0.01,490.6,95.83,18.79,,,W1
+O-100168,2024-07-30,C-7599,Grow Mini,Apparel,Shirts,Asia,Japan,Danielborough,17,708.19,0.14,10353.74,2316.06,,,Alexander Hill,W1
+O-100169,2024-12-12,C-2261,Social Plus,Apparel,Shirts,Europe,France,East Taylor,19,902.79,0.04,16466.89,,42.47,Low,Anthony Jones,
+O-100170,2025-05-30,C-5702,Long Plus,Electronics,Phones,Europe,UK,North Jonathan,6,869.34,0.2,4172.83,1155.35,28.73,High,Marcus Johnson,W3
+O-100171,2024-12-21,C-2734,Catch Plus,Furniture,Chairs,Europe,France,Mccoymouth,2,854.07,0.22,1332.35,354.44,,Medium,Kimberly Calderon,W4
+O-100172,2025-03-23,C-6435,Per Plus,Apparel,Jackets,Asia,India,Greenfort,15,328.72,0.14,4240.49,756.66,7.1,Medium,Diane Wilson MD,W4
+O-100173,2024-12-15,C-9319,Can Pro,Furniture,Chairs,North America,Canada,Robertstad,20,478.35,0.18,7844.94,1582.84,7.04,Medium,John Morrison,W3
+O-100174,2025-03-12,C-4106,None X,Electronics,Phones,Europe,UK,Murrayburgh,13,236.72,0.18,2523.44,548.82,44.53,,Michael Burnett,W3
+O-100175,2025-04-04,C-2039,Large X,Electronics,Tablets,North America,Canada,East Susan,8,490.43,0.18,3217.22,,48.83,Medium,Daniel Walker,W4
+O-100176,2025-03-24,C-2118,Lay Plus,Apparel,Jackets,Europe,France,Riveraborough,10,835.16,0.11,7432.92,1803.59,15.6,High,Ronald Tate,W4
+O-100177,2025-01-05,C-8893,Cup X,Apparel,Jackets,Asia,India,South Suzannehaven,18,631.19,0.14,9770.82,2065.3,35.3,High,Roberta Moss,W1
+O-100178,2024-09-06,C-4270,Who X,Electronics,Laptops,Asia,China,Barnettborough,6,660.75,,3330.18,,39.15,High,Jerry Robinson,W1
+O-100179,2025-06-16,C-7597,Force Mini,Apparel,Jackets,North America,Canada,South Patrick,20,576.42,0.02,11297.83,,28.31,,Amanda Burgess,W1
+O-100180,2024-07-31,C-4049,At Mini,Furniture,Sofas,Asia,Japan,Lake Alexport,6,554.35,0.18,2727.4,633.74,16.2,High,Taylor Riley,
+O-100181,2024-10-19,C-9549,Hand Plus,Electronics,Phones,North America,Canada,Michaelstad,11,372.92,0.14,3527.82,910.38,39.13,Low,Jason Taylor,W1
+O-100182,2024-10-24,C-6588,She X,Furniture,Sofas,Asia,Japan,Sallyhaven,6,457.76,0.02,2691.63,589.61,42.1,High,,W2
+O-100183,2024-10-01,C-6441,Forward Plus,Furniture,Tables,North America,USA,Maryville,8,552.29,,3225.37,729.02,13.38,,Zachary Browning,W4
+O-100184,2025-02-17,C-7203,Minute X,Furniture,Sofas,North America,Canada,Jorgeport,6,624.69,0.22,2923.55,,36.71,High,Autumn Rios,W2
+O-100185,2024-07-29,C-5962,His Mini,Apparel,Shirts,Europe,France,South Barbaramouth,11,714.77,0.04,7547.97,778.18,40.02,Low,Amy Lambert,W4
+O-100186,2025-06-24,C-6453,West X,Furniture,Sofas,Europe,Germany,Smithview,1,882.2,0.06,829.27,236.72,10.47,Low,Robert Monroe,W2
+O-100187,2025-06-15,C-2869,Modern Pro,Electronics,Laptops,Asia,Japan,New Joemouth,5,544.51,,2423.07,619.62,15.17,Medium,Matthew Hamilton,W1
+O-100188,2025-07-05,C-4974,Piece X,Apparel,Shirts,Europe,UK,Port Amandamouth,16,363.64,,4305.5,969.0,24.04,High,Luis Henry,W2
+O-100189,2025-06-26,C-4651,Wait Plus,Electronics,Phones,Asia,India,Anaport,12,595.18,0.08,6570.79,,40.07,Medium,,W1
+O-100190,2025-01-09,C-7663,Whole X,Electronics,Laptops,North America,USA,New Aprilshire,1,386.1,0.07,359.07,,25.69,Low,Andrew Kelly,W2
+O-100191,2025-06-16,C-8377,Bed X,Apparel,Shoes,Asia,China,Lake Lauren,9,279.84,0.07,2342.26,289.76,38.25,Medium,,
+O-100192,2024-09-15,C-4707,Where Pro,Apparel,Shoes,Asia,India,Kimville,18,642.74,0.29,8214.22,1559.27,11.23,Medium,Joshua Phillips,W1
+O-100193,2024-11-19,C-1913,Decade Plus,Apparel,Shirts,North America,Canada,Donnahaven,6,601.91,0.17,2997.51,519.95,41.8,Medium,,
+O-100194,2025-04-30,C-7900,Card Mini,Electronics,Laptops,Europe,France,Cummingsside,19,813.16,0.24,11742.03,1710.27,23.94,,,W3
+O-100195,2024-09-09,C-7451,Management X,Electronics,Tablets,Asia,Japan,Lewisshire,6,412.53,,2277.17,,27.74,Low,Mathew Marshall,W4
+O-100196,2024-12-25,C-8545,Deal Mini,Electronics,Laptops,North America,USA,Patriciastad,6,861.86,0.24,3930.08,826.89,32.69,Medium,Sarah Mcbride,W1
+O-100197,2025-02-12,C-8571,Newspaper X,Electronics,Phones,North America,USA,Leblancberg,19,146.37,,2363.88,,33.1,High,Cheryl Clark,W4
+O-100198,2024-10-28,C-5528,Every X,Apparel,Jackets,Asia,China,Port Kristiton,6,869.77,0.16,4383.64,1173.13,15.36,Low,Diana Perry,W1
+O-100199,2025-04-17,C-3615,Too Plus,Apparel,Shirts,North America,USA,Villabury,10,893.24,0.21,7056.6,,27.78,High,Allison Robinson,W1
+O-100200,2025-01-24,C-4321,Prevent Pro,Apparel,Shoes,Europe,UK,North Vanessa,20,618.46,0.1,11132.28,1743.16,26.57,Low,Jermaine Reid,W1
+O-100201,2025-04-14,C-7783,Role Pro,Furniture,Chairs,Europe,France,North Veronicamouth,14,422.62,,5384.18,,8.13,Low,Christopher Ibarra,W2
+O-100202,2025-01-17,C-9839,Visit Mini,Apparel,Shirts,North America,USA,North Kayla,19,661.75,0.15,10687.26,1775.19,,Low,,W1
+O-100203,2025-07-12,C-9930,Option X,Apparel,Jackets,Europe,UK,Brianton,9,875.2,0.28,5671.3,1279.4,10.26,Medium,,W2
+O-100204,2025-06-11,C-8954,Citizen X,Furniture,Tables,Europe,France,Whitechester,2,229.62,0.26,339.84,50.34,24.38,Medium,Robert Lopez,
+O-100205,2025-07-20,C-5537,Chair Mini,Apparel,Jackets,Europe,Germany,Brittanyshire,1,927.6,,723.53,92.71,13.36,Low,Stephen Green,
+O-100206,2025-01-22,C-9579,Type X,Electronics,Laptops,North America,USA,Lake Dustin,16,675.06,,8208.73,2013.95,35.21,Medium,Derrick Maxwell,
+O-100207,2025-05-15,C-7642,Win X,Electronics,Laptops,North America,USA,Jasonborough,8,144.72,0.3,810.43,182.67,,Low,Kirk Hampton,W3
+O-100208,2024-10-21,C-9111,It Pro,Furniture,Chairs,North America,USA,Blackstad,6,759.22,0.11,4054.23,533.99,22.08,High,Stephanie Murphy,W3
+O-100209,2024-11-21,C-4126,Leave X,Electronics,Laptops,Europe,Germany,Longtown,4,741.23,0.22,2312.64,,,Low,Melissa Waller,W3
+O-100210,2025-01-28,C-4668,Success X,Apparel,Shoes,Asia,India,New Carrie,5,891.32,0.03,4322.9,,,Medium,Michael Wood,W3
+O-100211,2025-07-02,C-3321,Month X,Apparel,Shirts,Europe,France,South Robertchester,6,365.18,0.18,1796.69,325.97,7.77,Medium,Faith Hopkins,W4
+O-100212,2024-10-18,C-5692,To Pro,Apparel,Shirts,Europe,Germany,Davidchester,4,433.27,0.27,1265.15,232.33,9.02,Low,Samantha Rodriguez,W3
+O-100213,2025-02-10,C-5179,Modern Plus,Electronics,Phones,North America,Canada,Villaport,15,129.72,0.02,1906.88,,20.53,Low,Timothy Raymond,W2
+O-100214,2025-01-16,C-7175,Smile Pro,Electronics,Laptops,Asia,China,East Frankchester,8,221.74,0.13,1543.31,194.71,24.21,Low,Tiffany Barnes,W4
+O-100215,2025-04-27,C-8305,Debate X,Furniture,Chairs,Europe,Germany,South Paulmouth,18,23.63,0.06,399.82,60.05,,Low,Jessica Wong,W3
+O-100216,2025-05-15,C-8355,Message X,Furniture,Chairs,North America,USA,North Johnchester,11,767.52,0.08,7767.3,932.15,32.81,Medium,Diana Allen,W4
+O-100217,2024-08-12,C-7082,Power Mini,Furniture,Chairs,North America,USA,New Coltonton,2,911.22,,1439.73,228.37,,Low,Justin Moran,W1
+O-100218,2025-06-30,C-4635,Cup Pro,Electronics,Phones,North America,USA,East Michaelmouth,2,938.28,0.21,1482.48,424.76,41.6,Medium,Angela Harrell MD,W4
+O-100219,2025-03-21,C-7307,Around Mini,Electronics,Phones,Europe,UK,Allenstad,1,520.5,0.17,432.01,82.51,34.58,Low,Jason Collins,
+O-100220,2025-05-10,C-9916,Reveal Mini,Apparel,Shirts,North America,Canada,Port Jonathanport,11,855.43,0.2,7527.78,1384.56,25.09,Medium,Lynn Nelson,W2
+O-100221,2024-11-28,C-1625,Lead Mini,Electronics,Tablets,North America,USA,Edwardsfort,7,202.98,0.11,1264.57,229.4,49.62,Low,,W3
+O-100222,2025-03-13,C-8239,Between Pro,Electronics,Tablets,Asia,China,Wesleyton,5,581.54,0.08,2675.08,329.03,10.62,High,Shawn Moreno,W4
+O-100223,2024-10-01,C-1587,Apply X,Furniture,Sofas,Europe,UK,Davidview,17,475.44,0.24,6142.68,731.02,30.34,Medium,Jessica Myers,W2
+O-100224,2025-05-11,C-1211,Music Plus,Furniture,Tables,North America,USA,Omarville,16,897.06,0.3,10047.07,,,Low,Thomas Fowler,W4
+O-100225,2025-04-12,C-4240,Congress Mini,Electronics,Phones,North America,Canada,Rachelhaven,2,289.54,0.17,480.64,56.69,30.96,High,Angelica Cruz,W4
+O-100226,2025-03-23,C-9894,Wall Mini,Apparel,Shirts,Europe,UK,Wongburgh,14,561.47,0.27,5738.22,,11.96,Low,Pamela Lopez,
+O-100227,2025-04-18,C-6573,Rule Pro,Electronics,Phones,Europe,UK,Port Kelly,16,891.22,0.26,10552.04,2353.4,,Medium,Diana Schroeder MD,
+O-100228,2025-05-07,C-9827,Control Mini,Furniture,Tables,Europe,UK,Kathrynview,11,657.11,0.09,6577.67,,22.34,High,,W2
+O-100229,2024-07-30,C-8183,Sometimes X,Apparel,Shoes,North America,Canada,Port Michael,1,185.0,0.29,131.35,28.98,27.84,High,Brad Anderson,W3
+O-100230,2025-07-13,C-4339,Could Mini,Furniture,Chairs,North America,Canada,Jenniferview,16,674.41,,10790.56,1396.53,35.82,High,Carla May,
+O-100231,2025-03-12,C-7023,Miss Plus,Furniture,Chairs,North America,Canada,North Lukemouth,19,413.8,0.06,7390.47,2102.87,49.47,High,,
+O-100232,2025-07-04,C-4692,Natural X,Furniture,Tables,Europe,Germany,Lake Adam,18,479.89,,7083.18,1152.85,15.55,Medium,Natalie Reid,W2
+O-100233,2024-10-20,C-5005,Understand Plus,Furniture,Chairs,Europe,UK,Briannaport,19,367.78,0.2,5590.26,754.3,48.35,High,Kyle Raymond,W3
+O-100234,2025-06-17,C-7163,Month Mini,Furniture,Sofas,Europe,Germany,Williamsport,1,195.63,0.14,168.24,43.02,31.2,Low,Carrie Allen,W4
+O-100235,2024-09-24,C-6817,Really Plus,Apparel,Shirts,Europe,Germany,Tammyberg,19,375.43,,6348.52,1181.34,25.01,Low,Michael Jones MD,
+O-100236,2025-04-02,C-2186,No Plus,Electronics,Phones,Europe,France,Debramouth,10,773.78,,7505.67,1225.72,41.03,Medium,Diana Oconnell,W2
+O-100237,2025-01-22,C-2830,Real Plus,Electronics,Phones,Asia,India,West Lauraville,3,208.27,0.19,506.1,107.6,14.54,Low,Linda Nelson,W1
+O-100238,2025-05-11,C-5612,Staff Pro,Furniture,Tables,Asia,Japan,Holdenborough,2,692.42,0.05,1315.6,139.71,,High,,W3
+O-100239,2024-10-17,C-5119,Best X,Furniture,Sofas,Europe,Germany,Wolfside,13,484.54,0.25,4724.27,1215.02,48.29,Low,Tracy Jones,W3
+O-100240,2024-10-17,C-4748,Accept X,Electronics,Laptops,North America,USA,Carterborough,11,550.22,,5205.08,1554.33,,Low,David Lara,W4
+O-100241,2025-03-02,C-6281,To Pro,Furniture,Tables,North America,USA,Brookeland,9,273.12,0.01,2433.5,,19.21,High,,W4
+O-100242,2025-02-26,C-3431,Move Mini,Electronics,Tablets,Asia,India,Johnland,17,299.22,,4069.39,483.96,14.33,High,,W1
+O-100243,2024-12-14,C-8886,Student Pro,Furniture,Chairs,Asia,India,West Adambury,18,183.48,0.08,3038.43,412.77,12.39,Low,Samantha Smith,W1
+O-100244,2024-09-13,C-8735,Strategy X,Furniture,Chairs,North America,USA,Ballmouth,10,996.9,,8274.27,2080.39,19.54,,Stephanie Howard,W2
+O-100245,2025-01-08,C-8647,National X,Apparel,Jackets,Asia,India,Port Daniel,10,872.82,0.28,6284.3,1495.74,43.65,Low,Sandra Lang,W2
+O-100246,2024-08-19,C-2722,Practice Pro,Furniture,Sofas,Asia,India,Peterfort,14,191.65,0.1,2414.79,,41.97,Low,Mackenzie Price,
+O-100247,2025-03-03,C-9600,Rock Pro,Furniture,Sofas,Asia,China,Robinsonfurt,10,240.74,0.07,2238.88,237.62,14.5,,Rebekah Walker,W3
+O-100248,2025-06-28,C-3002,Group Pro,Electronics,Phones,Europe,France,East Debra,16,873.41,0.08,12856.6,1901.16,27.75,High,Richard Ferguson,W3
+O-100249,2025-02-27,C-8439,Consumer Mini,Electronics,Phones,Europe,France,South Nicholas,8,963.32,0.27,5625.79,,17.74,High,,W4
+O-100250,2025-06-07,C-7065,Professor Plus,Electronics,Phones,North America,USA,Gonzalezmouth,13,613.28,0.0,7972.64,1985.53,32.34,Medium,,W3
+O-100251,2025-02-04,C-5793,Measure Pro,Furniture,Tables,North America,USA,North Sandraport,12,269.33,0.07,3005.72,596.98,,High,John Cortez,
+O-100252,2024-12-21,C-7220,Short Mini,Apparel,Shoes,Asia,India,South Elizabethstad,10,621.61,0.06,5843.13,783.84,48.18,High,David Petty,W2
+O-100253,2024-12-14,C-7832,Well Plus,Apparel,Shoes,Europe,France,Harmonfurt,5,370.76,0.12,1631.34,231.4,29.22,Medium,Lydia Ross,W2
+O-100254,2025-01-03,C-7758,Although Plus,Furniture,Sofas,North America,Canada,East Jeffreymouth,7,855.28,0.01,5927.09,956.39,24.82,Low,Victor Clay,
+O-100255,2024-08-26,C-6235,Wind Pro,Electronics,Phones,North America,Canada,Port Shannon,10,76.24,,571.8,157.53,42.69,,Charles Donaldson,W2
+O-100256,2025-06-30,C-9702,Sometimes Pro,Furniture,Sofas,Europe,France,Alexandershire,10,305.97,0.2,2447.76,399.92,49.44,High,Sean Jordan,W1
+O-100257,2025-02-08,C-1743,Do X,Apparel,Shirts,Europe,UK,South Chloe,7,197.62,0.11,1231.17,291.28,,Low,Gary Williams,W1
+O-100258,2025-03-28,C-5035,State Pro,Apparel,Shoes,Europe,France,Nicoleborough,5,278.47,0.0,1392.35,191.43,14.19,Medium,Leslie Allen,W2
+O-100259,2025-03-10,C-5900,Question Mini,Furniture,Tables,Europe,France,Bretthaven,2,80.58,0.21,127.32,27.71,23.43,High,Jennifer Knapp,W3
+O-100260,2025-07-23,C-4187,Radio Plus,Furniture,Chairs,Asia,China,Brooksport,16,12.58,0.25,150.96,,48.55,High,Carolyn Porter,
+O-100261,2025-05-26,C-9017,Stock Pro,Electronics,Tablets,Europe,France,Lake Alan,13,919.35,0.25,8963.66,1835.87,43.24,High,Aaron Park,W1
+O-100262,2024-12-08,C-5832,Teacher Plus,Apparel,Shoes,Asia,China,New Kristaberg,7,304.96,0.12,1878.55,215.59,14.09,Medium,William Jones,W1
+O-100263,2025-07-18,C-8318,Bring Mini,Furniture,Sofas,Asia,India,Port Stephanie,10,721.42,0.07,6709.21,856.95,48.76,Low,Mark Davis,W2
+O-100264,2025-04-08,C-5286,Sport Plus,Apparel,Shoes,Asia,Japan,Michaelchester,16,453.4,0.11,6456.42,1048.79,41.54,Medium,Jeffrey Johnson,W4
+O-100265,2025-05-28,C-6115,Old X,Furniture,Chairs,North America,Canada,North Juan,5,126.04,0.14,541.97,108.05,47.33,High,Mr. Eric Morrison,W4
+O-100266,2024-10-19,C-9288,Chance Plus,Furniture,Chairs,Asia,India,Rickyberg,17,269.91,,3303.7,517.87,31.2,Low,Tracey Rodriguez,W3
+O-100267,2025-05-03,C-5915,Red X,Electronics,Phones,Europe,Germany,Wendymouth,6,864.02,0.28,3732.57,481.22,9.56,,Jose Gonzalez,W3
+O-100268,2024-11-11,C-9592,Recently X,Apparel,Jackets,Europe,UK,Williamston,12,808.3,,8050.67,1581.87,41.97,,Fred Maldonado,W4
+O-100269,2025-02-16,C-8890,Near Pro,Apparel,Jackets,Asia,Japan,North Phillip,6,672.96,0.17,3351.34,633.08,43.89,Medium,Austin Soto,W3
+O-100270,2024-09-15,C-3796,Response Mini,Electronics,Laptops,North America,USA,Fosterbury,19,252.95,0.15,4085.14,835.41,,,Russell Robinson,W2
+O-100271,2024-10-21,C-2948,Term Plus,Electronics,Tablets,Asia,India,Lake Amanda,5,426.99,0.01,2113.6,572.15,21.26,Low,Emily Gates,
+O-100272,2025-06-22,C-1165,Year Plus,Electronics,Tablets,North America,Canada,West Andreahaven,15,681.8,0.27,7465.71,1933.55,17.63,Low,,
+O-100273,2025-02-21,C-4853,Argue Pro,Electronics,Laptops,Europe,Germany,North Johnfurt,3,254.65,0.01,756.31,160.5,16.77,Medium,Dawn Hill,W1
+O-100274,2025-07-04,C-7912,Everybody Plus,Apparel,Shirts,Europe,Germany,Stevenberg,9,894.94,0.29,5718.67,1579.55,46.21,Low,Adam Gould,
+O-100275,2025-02-22,C-4826,Bag Mini,Apparel,Shirts,Asia,Japan,Ruizbury,11,145.25,0.29,1134.4,215.43,35.74,High,Mathew Thomas,W1
+O-100276,2024-08-15,C-6656,Old Plus,Furniture,Chairs,Asia,China,Meaganside,15,31.57,0.2,378.84,64.3,40.79,High,Jessica Oliver,W3
+O-100277,2024-10-25,C-8364,A Pro,Furniture,Chairs,North America,Canada,Tinahaven,16,794.52,0.23,9788.49,1796.06,23.52,Medium,Clayton Williams,W1
+O-100278,2024-08-10,C-2269,Structure X,Electronics,Laptops,North America,USA,Lewisborough,17,666.53,0.09,10311.22,1703.25,38.97,Medium,Melissa Russell,W1
+O-100279,2024-10-10,C-6417,Different Mini,Apparel,Jackets,Europe,UK,Port Jessicafurt,2,43.58,0.0,87.16,19.6,42.05,Medium,,W4
+O-100280,2025-02-06,C-1908,Population Plus,Apparel,Shoes,Asia,India,North Alicia,14,365.18,0.18,4192.27,623.61,35.95,High,Joel Stewart,W2
+O-100281,2025-04-15,C-4126,Fill Pro,Electronics,Laptops,Asia,China,West Donnastad,18,697.74,0.2,10047.46,2925.56,28.07,,Daniel Ruiz,W3
+O-100282,2024-12-23,C-4116,Coach Mini,Electronics,Phones,Asia,Japan,New Christopherport,10,806.47,0.11,7177.58,778.1,21.14,Medium,Susan Brown,W3
+O-100283,2025-06-30,C-4342,Opportunity X,Electronics,Phones,Asia,China,Lake Jenniferburgh,5,236.57,0.11,1052.74,266.84,25.88,Low,Jacob Sanchez,W2
+O-100284,2024-11-26,C-5615,Health Pro,Apparel,Shirts,North America,USA,North Amber,7,886.15,0.24,4714.32,1400.69,19.38,Low,Lisa Burgess,
+O-100285,2025-05-12,C-6053,Well Mini,Electronics,Phones,Europe,Germany,Lake Meghan,1,785.82,0.02,770.1,191.28,42.21,Medium,Nancy Morris,
+O-100286,2025-04-14,C-2466,Small Mini,Furniture,Tables,Asia,Japan,New Joyce,2,838.59,,1643.64,488.61,27.23,,Catherine Crane,W1
+O-100287,2025-03-04,C-1397,Certain X,Apparel,Shoes,Europe,France,East William,16,807.23,0.24,9815.92,1811.78,9.13,Medium,Steven Reyes,W2
+O-100288,2024-09-18,C-5564,Itself Plus,Apparel,Jackets,Asia,India,Douglasstad,7,238.15,0.06,1567.03,,41.62,High,Michael Williams,W3
+O-100289,2025-02-01,C-3694,Need Mini,Apparel,Shoes,Asia,China,Rogersview,16,566.19,,8968.45,1986.8,16.84,High,Michael Peterson,
+O-100290,2025-05-09,C-7010,Work Plus,Electronics,Tablets,Europe,UK,Millsland,15,14.56,0.19,176.9,24.12,,Medium,Roy Wilson,
+O-100291,2025-07-27,C-4150,Figure Plus,Apparel,Jackets,Asia,China,Amberstad,14,590.86,,5873.15,1593.94,,Low,Nicole Snyder DDS,W4
+O-100292,2024-08-02,C-9743,Modern X,Apparel,Jackets,Europe,Germany,Markfurt,7,128.27,,727.29,,22.52,Medium,Tina Stark,W2
+O-100293,2024-08-20,C-2750,Image X,Apparel,Jackets,North America,USA,Port Arthurview,18,896.94,,14207.53,,7.3,Medium,Arthur Gomez,W2
+O-100294,2025-02-19,C-5749,Agent Pro,Electronics,Laptops,North America,Canada,South Sandra,5,116.49,0.11,518.38,124.81,46.09,Medium,David Vargas,
+O-100295,2025-01-20,C-9542,Second Plus,Apparel,Jackets,North America,USA,Amyborough,14,403.83,0.2,4522.9,503.05,24.57,,Christine Beck,W2
+O-100296,2025-07-12,C-7131,Management Plus,Furniture,Chairs,North America,Canada,New Roger,4,844.91,0.08,3109.27,553.62,11.86,,Michael Baker,
+O-100297,2024-12-21,C-9059,Behind Mini,Furniture,Chairs,Europe,France,Huynhmouth,5,731.4,0.23,2815.89,,34.94,Low,Kimberly Mayer,W4
+O-100298,2024-09-03,C-7252,Again X,Apparel,Shoes,Asia,Japan,West Elizabeth,17,589.33,0.06,9417.49,,,High,Stephanie Wilson,W2
+O-100299,2024-10-22,C-4662,Forget X,Apparel,Shoes,North America,Canada,Rhodesside,9,632.93,0.12,5012.81,825.7,,Medium,Richard Shelton,W4
+O-100300,2024-12-11,C-2365,Prevent Plus,Furniture,Tables,Asia,India,Derekfurt,1,354.29,0.02,347.2,56.57,20.42,,,W2
+O-100301,2025-03-14,C-8488,Whom Plus,Electronics,Laptops,Europe,Germany,Kyleside,12,175.59,,1938.51,496.18,25.38,High,Nicholas Fields,
+O-100302,2025-03-25,C-6893,Standard Mini,Furniture,Tables,Europe,France,West Marymouth,20,601.91,0.11,10714.0,1518.79,48.17,High,Elizabeth Fleming,W4
+O-100303,2024-12-20,C-3583,Nothing Plus,Furniture,Chairs,North America,Canada,Andrewbury,1,569.82,0.26,421.67,,20.37,High,Megan Lara,W4
+O-100304,2024-08-31,C-7657,New Mini,Electronics,Phones,Europe,Germany,Johnchester,12,510.14,0.08,5631.95,1507.53,9.59,Medium,Andrew Velez,W4
+O-100305,2025-06-19,C-1325,Why X,Electronics,Tablets,North America,USA,Ramirezfurt,9,280.62,,2500.32,506.7,21.38,,Christina Hamilton,W3
+O-100306,2024-09-27,C-8041,Role X,Electronics,Phones,North America,USA,Lisaview,19,205.69,0.23,3009.24,695.32,36.19,Low,Joseph Martinez,W4
+O-100307,2025-02-18,C-9068,Must Mini,Apparel,Shoes,Europe,France,West Dominique,20,883.98,0.1,15911.64,1679.74,13.87,,John Bullock,W2
+O-100308,2024-12-22,C-8252,Gun Plus,Furniture,Sofas,North America,Canada,Edwardsport,17,643.44,0.21,8641.4,1009.56,7.3,High,,W4
+O-100309,2025-03-06,C-6796,Figure Mini,Furniture,Chairs,Asia,Japan,New Gabrielle,19,893.35,0.28,12221.03,3024.57,,Medium,Deborah Wise,W4
+O-100310,2024-11-09,C-9170,Buy X,Electronics,Phones,Europe,UK,Bennetttown,13,841.85,,9083.56,2391.09,44.95,High,Becky Garcia,W4
+O-100311,2024-10-07,C-3397,Test Plus,Electronics,Tablets,Asia,China,Isaacmouth,20,492.9,0.2,7886.4,1522.48,44.19,Medium,Cassandra Lowe,W2
+O-100312,2024-10-28,C-2409,Recent Plus,Electronics,Laptops,North America,USA,Guerraville,9,126.41,0.21,898.78,209.65,45.13,,,W3
+O-100313,2024-11-13,C-9488,Something X,Electronics,Tablets,Europe,UK,West Clifford,17,916.25,0.27,11370.66,2158.7,38.39,High,Nathan Evans,W3
+O-100314,2024-11-17,C-1062,Player Plus,Apparel,Shoes,Europe,UK,Brianborough,19,487.39,0.17,7686.14,1196.12,15.45,Medium,Crystal Lewis,
+O-100315,2025-06-13,C-7295,Also Mini,Electronics,Laptops,Asia,Japan,East Micheleberg,14,564.77,0.27,5771.95,1149.61,32.14,Low,Bonnie Mccullough,W2
+O-100316,2025-03-03,C-7303,Lose Pro,Electronics,Tablets,Asia,Japan,Port Amyton,13,87.92,0.24,868.65,174.75,44.92,High,Omar Hamilton,W4
+O-100317,2024-12-08,C-7715,Population X,Apparel,Jackets,Europe,France,Danielburgh,8,699.79,0.22,4366.69,,18.66,Low,,W3
+O-100318,2025-05-18,C-8409,Model Mini,Furniture,Tables,North America,Canada,Lindsayberg,5,406.11,0.2,1624.44,340.4,27.17,High,Alicia Zamora,W1
+O-100319,2024-11-06,C-6839,Bed Plus,Apparel,Shoes,Europe,Germany,West Teresaberg,15,330.96,0.06,4666.54,698.52,32.71,Low,,W3
+O-100320,2024-11-14,C-7894,Election Mini,Electronics,Tablets,Asia,India,West Melissa,15,851.02,0.25,9573.97,2685.38,12.83,Low,Karen Charles,W2
+O-100321,2025-05-24,C-2597,Without Plus,Furniture,Tables,Europe,Germany,East Amyside,19,383.9,0.15,6199.98,637.68,45.18,High,,W4
+O-100322,2025-05-29,C-3771,Girl Plus,Furniture,Sofas,North America,Canada,East Christinemouth,16,841.78,0.1,12121.63,2658.46,33.43,Low,Judy Brandt,W2
+O-100323,2025-04-04,C-3092,Budget Mini,Apparel,Jackets,Europe,France,Tranport,9,733.51,0.22,5149.24,1036.21,8.6,,Michael Wilson,W1
+O-100324,2025-03-19,C-6571,Room Plus,Electronics,Phones,North America,USA,Riveraport,7,954.82,0.13,5814.85,1000.1,31.5,High,Michelle Carey,W3
+O-100325,2025-01-03,C-2726,Feeling X,Apparel,Jackets,Asia,China,Kathleenhaven,4,122.03,0.29,346.57,68.56,40.01,High,Jessica Edwards,W4
+O-100326,2025-03-04,C-7974,Base Mini,Electronics,Laptops,Europe,Germany,Finleyburgh,1,396.87,0.27,289.72,76.2,44.43,Low,Christian Guerrero,W3
+O-100327,2025-05-09,C-7357,Red Plus,Electronics,Phones,North America,USA,East Brandy,8,150.15,0.2,960.96,150.56,14.96,Low,Sydney Harris,W1
+O-100328,2025-04-02,C-9496,Military Mini,Electronics,Laptops,North America,Canada,South Samuelmouth,5,558.45,,2038.34,375.86,44.16,Low,Scott Lloyd,W3
+O-100329,2024-08-28,C-6702,Traditional Pro,Apparel,Jackets,Asia,China,South Meaganburgh,4,942.23,0.01,3731.23,819.87,39.59,Low,Jose Lewis,W3
+O-100330,2024-11-20,C-8505,Simple X,Electronics,Phones,Europe,Germany,Heatherport,11,383.87,0.08,3884.76,789.6,26.87,Medium,Robin Mayo,W1
+O-100331,2024-09-15,C-4396,Buy Pro,Apparel,Jackets,Europe,UK,South Emilyfurt,10,442.66,0.12,3895.41,724.72,23.76,,Andrew Montoya,W1
+O-100332,2025-05-31,C-6262,Community Pro,Furniture,Chairs,Europe,France,Priceshire,12,797.22,0.12,8418.64,2396.42,6.59,Low,Blake Campbell,W3
+O-100333,2024-11-10,C-6993,Appear Plus,Apparel,Shirts,Asia,Japan,Rachelborough,9,757.97,0.08,6275.99,1673.18,10.62,Medium,Tyler Lee,W3
+O-100334,2024-09-15,C-9060,Major X,Furniture,Chairs,North America,USA,South Aliciaton,17,675.43,0.02,11252.66,3191.03,38.22,High,Robin Harding,W1
+O-100335,2024-12-21,C-1618,Blood X,Apparel,Shirts,Asia,India,North April,19,85.8,,1173.74,288.79,8.54,Low,Jessica Webb,W4
+O-100336,2025-07-12,C-8748,Alone Plus,Electronics,Laptops,Asia,India,Michaelborough,7,667.63,0.14,4019.13,683.49,31.66,Medium,Morgan Lewis,W3
+O-100337,2025-07-22,C-7575,Discuss Pro,Electronics,Phones,Europe,France,Lake Coryview,17,456.11,0.16,6513.25,1223.55,,Low,Diana Murray,W3
+O-100338,2024-11-27,C-4095,Live Plus,Furniture,Chairs,Europe,UK,Wilkinsmouth,6,154.86,0.16,780.49,182.03,,,Gabrielle Meyer,W1
+O-100339,2024-11-12,C-1134,Management X,Electronics,Phones,North America,USA,Lake James,17,923.89,,14292.58,,14.26,Low,Catherine Wells,W2
+O-100340,2025-06-13,C-7202,Carry X,Electronics,Phones,Asia,Japan,Christinemouth,11,681.39,,7120.53,1700.73,10.91,High,Susan Davis,W2
+O-100341,2025-01-18,C-8364,Interesting Pro,Apparel,Shoes,Asia,Japan,Aaronburgh,13,335.15,0.06,4095.53,,,High,Crystal Potts,W2
+O-100342,2024-09-10,C-2251,Save Mini,Furniture,Chairs,Europe,France,Roseton,2,215.37,0.14,370.44,51.43,,High,Tiffany Barrett,W4
+O-100343,2024-10-02,C-8385,Hope Mini,Furniture,Sofas,Asia,China,Baileyport,8,830.14,0.13,5777.77,1047.17,35.58,Low,Tonya Mendoza,W3
+O-100344,2025-07-24,C-8888,Level Plus,Electronics,Phones,Asia,Japan,South Ericton,11,338.46,0.2,2978.45,,,High,Danielle Norris,W4
+O-100345,2025-07-07,C-9444,Main Plus,Furniture,Chairs,North America,USA,Weavershire,4,977.42,0.1,3518.71,869.83,49.78,High,,
+O-100346,2024-08-26,C-2800,Piece Pro,Furniture,Tables,Europe,UK,West Kerrifurt,6,335.37,0.25,1509.16,331.0,13.72,Medium,Robert Greer,W3
+O-100347,2025-03-24,C-8878,Commercial Pro,Apparel,Shirts,Europe,France,Collinshaven,4,854.33,0.22,2665.51,587.59,41.4,,Emma Santana,W1
+O-100348,2025-05-08,C-8284,Author Plus,Electronics,Phones,Europe,UK,North Rebecca,20,890.65,0.14,15319.18,3700.03,,,Crystal Morales,W1
+O-100349,2024-08-17,C-3683,Smile X,Electronics,Tablets,Asia,India,Powersfort,3,261.16,0.07,728.64,122.1,,,Steve Oliver,W2
+O-100350,2025-02-25,C-1863,Story X,Apparel,Jackets,Europe,Germany,West Alexandertown,11,998.17,0.04,10540.68,,,High,Alicia Johnson,W4
+O-100351,2025-06-13,C-1056,Term Plus,Furniture,Tables,Europe,France,Perryfort,14,201.14,0.06,2647.0,273.09,8.93,High,Casey Curry,W3
+O-100352,2024-12-16,C-4970,Agency Plus,Apparel,Jackets,North America,USA,Robinfurt,18,649.97,,11114.49,2816.3,,Medium,David Ruiz,W2
+O-100353,2025-06-28,C-6795,Set Mini,Electronics,Laptops,Asia,Japan,Ryanstad,5,882.34,0.02,4323.47,,44.58,Medium,Amber Kelly,W2
+O-100354,2025-02-05,C-6282,Accept X,Electronics,Tablets,Asia,China,Lindseyfort,9,430.69,0.22,3023.44,446.74,,Medium,,W4
+O-100355,2025-01-11,C-2220,Key X,Furniture,Chairs,North America,Canada,Teresachester,14,716.36,0.07,9327.01,1022.42,45.48,High,Joshua Lopez,
+O-100356,2025-02-26,C-4309,Care Pro,Electronics,Tablets,North America,Canada,Lake Johnathan,11,539.08,0.14,5099.7,644.03,12.75,Medium,Linda Maynard,W4
+O-100357,2024-10-21,C-6988,Determine Plus,Furniture,Tables,North America,Canada,North Hannah,17,615.27,0.18,8576.86,,19.2,High,Jose Ortega,W1
+O-100358,2025-02-21,C-4094,Serious Mini,Furniture,Sofas,Europe,Germany,Kaylatown,16,601.44,,7890.89,2061.9,17.5,Medium,Andrea Miller,W4
+O-100359,2025-03-22,C-5435,Interview X,Electronics,Laptops,North America,USA,Gordonhaven,1,192.5,0.23,148.22,30.79,12.9,Medium,Nicholas Shepherd,W2
+O-100360,2024-11-22,C-7210,By X,Electronics,Laptops,Asia,Japan,Lake Johnton,8,261.51,0.28,1506.3,,33.95,Medium,,W4
+O-100361,2024-10-16,C-6705,Both X,Furniture,Chairs,Europe,UK,Moranfurt,9,59.05,0.21,419.85,56.76,39.66,High,,
+O-100362,2024-09-08,C-7624,Clearly Pro,Apparel,Shoes,Asia,Japan,Sandersport,9,500.3,0.29,3196.92,794.97,,,Briana Schwartz,W3
+O-100363,2024-09-18,C-4557,Star Mini,Apparel,Jackets,North America,Canada,North Stephen,16,73.69,0.3,825.33,,32.64,Low,Brandon Park,W2
+O-100364,2025-03-03,C-8585,Surface Mini,Furniture,Chairs,Europe,Germany,Ramosmouth,14,735.98,0.25,7727.79,2067.96,,Low,,W4
+O-100365,2025-06-06,C-7703,Expert Mini,Furniture,Chairs,North America,Canada,Estradaland,15,473.39,0.28,5112.61,,24.6,,Mark Steele,W3
+O-100366,2025-05-01,C-9638,Something Plus,Apparel,Jackets,Europe,France,East Deannamouth,8,304.03,0.23,1872.82,534.9,,Medium,David Jones,W3
+O-100367,2025-07-14,C-5608,Key X,Apparel,Jackets,Asia,Japan,Melissastad,1,630.0,0.18,516.6,95.89,34.93,Low,Richard Ramos,W4
+O-100368,2024-09-25,C-6779,Reflect X,Electronics,Tablets,Asia,Japan,Williamsmouth,9,366.5,0.24,2506.86,301.1,,High,William Miller,W2
+O-100369,2025-07-14,C-5300,Care Plus,Furniture,Sofas,North America,Canada,Hernandezstad,7,175.2,,1128.29,238.03,36.5,Medium,,W2
+O-100370,2024-10-21,C-6531,Probably Pro,Furniture,Tables,Europe,Germany,East Tamaraborough,12,256.77,0.27,2249.31,573.82,22.03,Low,Tyler Perez II,W1
+O-100371,2025-06-27,C-2987,Happen Pro,Electronics,Phones,North America,USA,Martinfurt,17,231.54,0.28,2834.05,442.3,26.53,Low,,W1
+O-100372,2025-05-31,C-4622,Week Pro,Furniture,Chairs,North America,Canada,Georgeville,11,744.39,0.19,6632.51,,22.55,,James Barnes,W1
+O-100373,2025-03-05,C-3066,Others Plus,Apparel,Shirts,Asia,India,North Tammy,14,285.03,0.28,2873.1,347.93,46.67,Low,Alyssa Martin,W3
+O-100374,2024-11-20,C-8362,All Pro,Apparel,Shirts,North America,Canada,Christineside,7,215.86,0.14,1299.48,181.2,42.48,Low,Julie Taylor,W4
+O-100375,2025-01-20,C-6765,Develop X,Furniture,Chairs,Europe,France,Parkerport,1,579.82,,510.24,80.12,25.06,Low,,W1
+O-100376,2025-01-19,C-1491,Forget Plus,Apparel,Shoes,North America,USA,Lake Andre,15,119.03,,1303.38,249.51,34.27,High,,W3
+O-100377,2025-01-15,C-5452,Coach Pro,Electronics,Laptops,Europe,Germany,Villachester,19,370.96,0.04,6766.31,,38.13,High,,W2
+O-100378,2025-02-15,C-3601,Together Plus,Electronics,Tablets,Asia,Japan,Tracieside,5,543.74,0.26,2011.84,277.8,,High,Mariah Thomas,
+O-100379,2024-10-17,C-9190,None Plus,Furniture,Tables,Asia,India,South Sandra,20,273.57,0.18,4486.55,1115.13,12.27,Medium,Jessica Cooper,W4
+O-100380,2024-10-19,C-1389,Every Pro,Electronics,Phones,Europe,Germany,Marshalltown,1,981.59,0.2,785.27,114.59,48.52,High,Patrick Alvarado,W2
+O-100381,2024-11-02,C-3178,Factor Plus,Furniture,Sofas,North America,Canada,West Sandra,6,718.26,0.29,3059.79,,27.76,High,Christine Lewis,
+O-100382,2024-12-10,C-8899,Poor Pro,Electronics,Laptops,Europe,UK,Mahoneyfurt,14,752.46,0.07,9797.03,2272.14,41.27,High,Nicholas Harrison,W4
+O-100383,2024-12-10,C-7951,The Mini,Apparel,Shirts,Europe,UK,New Kellyton,11,380.01,0.25,3135.08,,30.76,Low,Melody Johnson,W1
+O-100384,2025-01-14,C-3701,Though Pro,Electronics,Phones,North America,Canada,Masonshire,9,202.45,0.02,1785.61,275.72,20.21,Low,James Mcguire,
+O-100385,2024-09-22,C-8062,Stand Plus,Furniture,Sofas,Europe,France,West Seanbury,3,304.41,,757.98,218.56,49.75,Medium,Angela Shaw,W1
+O-100386,2025-05-28,C-8814,Air Plus,Electronics,Tablets,North America,Canada,Jonesfort,17,728.37,,10401.12,1922.07,36.51,High,,W3
+O-100387,2025-03-17,C-9802,Difficult X,Electronics,Laptops,North America,USA,Adamland,8,34.96,,248.92,68.77,48.57,,Eric Morgan,W3
+O-100388,2024-12-01,C-1855,Concern X,Electronics,Laptops,Asia,China,Port Sarah,10,60.39,0.13,525.39,152.59,17.67,,Christopher Miles,W3
+O-100389,2025-05-09,C-3082,Support Plus,Electronics,Tablets,North America,Canada,Port Garyshire,2,298.78,0.03,579.63,79.72,23.6,Low,,
+O-100390,2025-04-07,C-5016,Point Pro,Electronics,Tablets,Europe,Germany,Joshuaburgh,18,383.89,0.13,6011.72,1601.05,43.32,High,Robert Hardy,
+O-100391,2025-06-10,C-5606,Similar Pro,Electronics,Phones,Asia,China,Justinfort,15,678.8,0.22,7941.96,1415.5,42.15,Low,Kenneth Decker,W2
+O-100392,2025-07-05,C-8245,Health Pro,Apparel,Shirts,Europe,UK,Rachelside,9,79.08,0.17,590.73,,35.36,High,Stephen Barnes,
+O-100393,2024-10-31,C-7324,Sit Plus,Apparel,Shirts,Europe,Germany,Lake Scottstad,11,137.37,0.01,1495.96,412.97,48.56,,Wesley Cruz,W1
+O-100394,2025-06-20,C-6255,Plant Mini,Apparel,Jackets,North America,Canada,New Jessicastad,14,386.84,0.21,4278.45,,44.2,High,,W1
+O-100395,2025-03-02,C-5412,Me Pro,Electronics,Phones,Europe,France,Kyleport,9,803.83,0.11,6438.68,1687.33,42.68,Medium,Ana Garcia,W3
+O-100396,2025-05-18,C-1492,Smile Mini,Electronics,Phones,North America,USA,New Christineborough,20,107.58,0.25,1613.7,443.57,7.08,Low,Mary Castro,W1
+O-100397,2024-12-14,C-2368,Environment Plus,Apparel,Shoes,Asia,China,Port Joshua,19,152.92,0.07,2702.1,515.7,33.51,Low,Bethany Anderson,W4
+O-100398,2025-05-26,C-5774,Billion Mini,Apparel,Jackets,North America,USA,New Bethany,17,470.12,,5834.19,872.12,20.73,,Walter Williams,W2
+O-100399,2025-06-06,C-9433,Attack X,Furniture,Chairs,Asia,India,Loganfurt,4,334.16,0.05,1269.81,278.39,14.8,Medium,Mr. Joseph Dunn,W3
+O-100400,2025-05-27,C-7892,Remain Mini,Furniture,Sofas,North America,USA,Port Timothy,8,672.8,0.23,4144.45,630.14,,High,Sean Dixon,W3
+O-100401,2024-11-13,C-9027,Car Pro,Electronics,Tablets,North America,USA,Cynthiamouth,19,764.07,0.28,10452.48,2152.69,29.18,High,Sarah Mckenzie,
+O-100402,2024-08-17,C-8061,Decade Mini,Apparel,Shoes,Europe,UK,West Aimeeland,14,606.81,0.12,7475.9,825.27,32.84,High,Duane Norton DDS,W3
+O-100403,2024-08-29,C-5325,Draw Plus,Electronics,Phones,North America,USA,Lake Holly,10,605.51,0.13,5267.94,,,Medium,Anna Cline,W1
+O-100404,2025-07-06,C-6251,Worker Plus,Electronics,Laptops,Asia,Japan,Frederickberg,8,416.7,0.0,3333.6,363.32,21.33,,Alex Thompson,
+O-100405,2025-07-05,C-3907,Accept Plus,Electronics,Tablets,Asia,India,Osborneport,17,673.58,0.26,8473.64,,46.24,Low,Phyllis Hernandez,
+O-100406,2025-06-30,C-2300,Series Pro,Furniture,Chairs,North America,USA,Robertburgh,3,395.82,0.2,949.97,,9.62,,Aaron Walker,W3
+O-100407,2024-09-04,C-2005,Give Mini,Apparel,Jackets,Asia,China,Christopherville,17,162.09,,2397.31,563.67,36.71,,Sandra Hall,W3
+O-100408,2025-01-03,C-2892,Chair Mini,Electronics,Laptops,North America,Canada,Traceyville,18,809.64,0.17,12096.02,2930.88,31.14,High,Victoria Pearson,
+O-100409,2025-01-31,C-8945,Senior Pro,Apparel,Shirts,Asia,Japan,East Angelamouth,4,772.1,0.17,2563.37,603.39,40.81,Low,Eric Adams,W2
+O-100410,2025-06-19,C-4398,Walk X,Furniture,Chairs,North America,Canada,Kennethmouth,15,657.72,0.0,9865.8,1701.78,,Low,Mark Jenkins,
+O-100411,2025-06-15,C-1611,Crime Pro,Apparel,Jackets,Europe,UK,Kennethtown,20,884.91,0.24,13450.63,,32.73,High,,W4
+O-100412,2024-10-25,C-1260,Country X,Apparel,Shoes,Asia,China,Lake Christopher,17,851.09,0.05,13745.1,3540.79,33.46,,Jennifer Kelly,W2
+O-100413,2024-09-27,C-8758,Hour Plus,Electronics,Phones,North America,Canada,Port Jonathan,13,473.3,0.28,4430.09,740.26,16.07,High,Nichole Lee,W4
+O-100414,2025-02-13,C-3877,Teach Pro,Apparel,Shirts,Europe,France,Jacksonborough,19,501.94,,8583.17,938.22,36.16,,Susan Ramos,W2
+O-100415,2025-07-06,C-7459,Often Plus,Apparel,Shoes,Europe,Germany,Smithtown,5,370.89,0.14,1594.83,422.03,10.52,Low,Isaiah Bailey,W1
+O-100416,2024-09-08,C-4666,City Plus,Apparel,Shoes,Asia,Japan,West Timothyton,14,703.9,0.09,8967.69,1876.02,19.28,High,Ruben Perez,W2
+O-100417,2025-01-02,C-5138,Bank Plus,Furniture,Sofas,Asia,China,Morrishaven,9,881.9,0.11,7064.02,,23.23,Low,Jennifer Murphy,W4
+O-100418,2025-01-17,C-8558,Participant Mini,Electronics,Phones,Asia,India,Jamesland,1,678.2,0.12,596.82,94.44,,,Susan Fuentes,W4
+O-100419,2025-07-10,C-3256,All Pro,Electronics,Laptops,Asia,India,Amyview,10,297.37,0.01,2943.96,571.98,31.17,,James Lang,W1
+O-100420,2024-10-08,C-9775,Industry Mini,Apparel,Jackets,Europe,Germany,North David,10,422.56,0.16,3549.5,827.83,49.23,High,Nicole Trujillo,W4
+O-100421,2025-07-14,C-8094,Source Mini,Electronics,Laptops,North America,USA,West Valeriestad,13,612.57,0.22,6211.46,1396.14,48.55,Medium,Shannon Thompson,W4
+O-100422,2025-04-28,C-1935,Wrong Mini,Furniture,Chairs,Asia,Japan,Annebury,1,995.52,0.01,985.56,199.13,42.01,High,Meredith Robinson,W4
+O-100423,2024-11-19,C-1455,Common Plus,Furniture,Chairs,North America,Canada,Jameston,15,556.05,,7673.49,2100.87,44.19,High,,W4
+O-100424,2025-07-16,C-1941,Experience Pro,Furniture,Tables,North America,Canada,Morastad,15,264.81,0.17,3296.88,703.7,13.24,Low,Christopher Mitchell,W3
+O-100425,2024-10-15,C-1052,Sister Pro,Apparel,Jackets,Asia,India,Carolstad,7,836.23,0.1,5268.25,1185.84,15.9,Medium,Brian Hernandez,W3
+O-100426,2025-01-02,C-8642,Choice Pro,Electronics,Tablets,Asia,India,East Jacob,12,106.72,0.29,909.25,129.85,18.36,High,,W2
+O-100427,2025-07-27,C-3343,Enough Mini,Furniture,Chairs,North America,Canada,Stephaniemouth,2,699.23,0.14,1202.68,353.32,17.4,,Courtney Williams,W4
+O-100428,2025-02-20,C-7969,Card Plus,Electronics,Laptops,North America,Canada,Ashleyland,12,628.0,0.21,5953.44,716.45,7.71,Medium,Richard Lang,W3
+O-100429,2024-11-02,C-2013,Key Mini,Furniture,Sofas,Europe,Germany,North Allen,12,87.18,0.01,1035.7,195.17,32.89,Medium,Rebecca Robinson,
+O-100430,2025-06-04,C-6407,Staff Mini,Apparel,Shoes,North America,Canada,Cowanbury,2,584.21,0.05,1110.0,281.93,39.93,High,Michael Miller,W1
+O-100431,2024-07-28,C-7468,College Pro,Electronics,Tablets,Asia,China,Paulmouth,2,665.89,0.2,1065.42,184.49,,Medium,,W4
+O-100432,2025-05-31,C-4882,Watch X,Apparel,Shirts,Europe,UK,Clarkstad,13,333.54,0.14,3728.98,579.84,32.22,High,Kristen Gonzalez MD,W4
+O-100433,2025-03-12,C-7839,Program Plus,Apparel,Jackets,North America,USA,North Nathaniel,5,725.82,0.29,2576.66,656.95,23.13,Low,Mark Dillon,
+O-100434,2024-12-06,C-8347,Itself Mini,Furniture,Tables,Asia,India,Maryborough,6,51.05,,287.92,33.41,5.15,,Carrie Brown,W4
+O-100435,2024-11-07,C-9408,Of Mini,Apparel,Shirts,Asia,Japan,Port Carrie,11,802.15,0.14,7588.34,1543.63,7.31,Low,Heather Trevino,W2
+O-100436,2025-06-08,C-2920,Practice Pro,Furniture,Sofas,Europe,France,Daleshire,10,493.21,0.0,4932.1,682.87,47.16,,Travis Hernandez,W4
+O-100437,2024-08-28,C-3055,Measure Plus,Electronics,Laptops,Asia,Japan,East Kimberly,7,347.37,0.1,2188.43,472.45,20.67,Low,Brian Rice,W1
+O-100438,2024-09-02,C-4552,Prepare X,Apparel,Jackets,North America,Canada,Petersonport,1,80.79,0.08,74.33,8.12,17.94,High,Karen Reyes,W2
+O-100439,2025-06-12,C-5871,Maybe X,Apparel,Shirts,Asia,India,Jordanburgh,9,282.33,0.15,2159.82,547.56,12.33,Low,,W3
+O-100440,2024-08-17,C-3032,Lawyer Pro,Apparel,Shoes,Asia,India,Brianatown,8,37.39,0.07,278.18,56.55,40.61,Medium,Rebecca Robertson,W4
+O-100441,2025-01-01,C-2476,Every Plus,Apparel,Jackets,Asia,China,North Matthew,16,727.18,0.18,9540.6,2608.1,6.98,Medium,Derek Harrison,W2
+O-100442,2025-02-12,C-2962,Ahead X,Electronics,Tablets,North America,USA,Wilsontown,12,239.04,0.04,2753.74,360.78,45.11,Low,Kathleen Robinson,W4
+O-100443,2024-08-24,C-7376,Light Pro,Furniture,Sofas,North America,USA,Whiteville,20,26.71,0.06,502.15,60.29,5.15,Low,,W1
+O-100444,2025-04-23,C-3888,Little X,Electronics,Tablets,North America,Canada,South Kevin,3,122.29,0.2,293.5,82.37,45.84,Medium,Karen Friedman,
+O-100445,2024-11-06,C-7648,Management Mini,Electronics,Laptops,Europe,Germany,West Jonathon,12,256.37,0.21,2430.39,285.18,28.62,Low,John Hill,W4
+O-100446,2025-01-04,C-5475,President Pro,Electronics,Laptops,North America,USA,West Justin,9,456.98,0.05,3907.18,,,Low,Michele Gates,W4
+O-100447,2025-04-13,C-7956,Institution X,Furniture,Tables,Asia,China,New Sarah,16,918.25,,14104.32,2878.43,,Medium,William Ellis,W2
+O-100448,2024-10-12,C-7034,Fly Plus,Electronics,Phones,North America,USA,North Richardmouth,7,221.29,0.05,1471.58,,31.46,Medium,Colton Shah,W3
+O-100449,2024-08-04,C-3865,Discover X,Apparel,Jackets,North America,USA,Smithberg,5,445.68,,2050.13,241.24,17.87,High,Sarah Lopez,
+O-100450,2025-05-17,C-4769,Whatever Pro,Electronics,Tablets,Asia,Japan,Port Austin,13,912.45,0.05,11268.76,,41.26,Low,,W4
+O-100451,2024-09-19,C-8068,Themselves Mini,Apparel,Jackets,Asia,India,Walkershire,1,323.87,0.24,246.14,48.07,28.22,Low,,W1
+O-100452,2025-07-05,C-4077,Scientist X,Apparel,Shirts,North America,USA,Kellyside,2,581.91,0.06,1093.99,245.95,41.29,Low,Ronnie Glass,W3
+O-100453,2024-08-29,C-3717,Contain Plus,Furniture,Sofas,Asia,Japan,New Cindyshire,3,296.33,0.07,826.76,117.32,9.4,,Amanda Horn,
+O-100454,2025-01-01,C-4073,Idea Pro,Electronics,Phones,North America,Canada,Lake Ryan,3,346.49,0.15,883.55,234.57,26.98,Low,,W3
+O-100455,2025-04-22,C-4689,Any Plus,Electronics,Phones,North America,USA,Lake Christopher,5,477.63,,1814.99,310.63,,Medium,Jeremy Nguyen,W2
+O-100456,2025-06-05,C-3485,Indeed Plus,Electronics,Tablets,Europe,Germany,East Matthew,9,891.28,0.25,6016.14,1012.67,28.17,Medium,Angelica Rogers,
+O-100457,2024-11-22,C-6767,Beat Mini,Apparel,Shirts,Europe,France,Cooleyton,7,523.05,0.24,2782.63,796.16,18.19,Low,Anne Villarreal,W2
+O-100458,2024-11-27,C-8011,Instead Pro,Apparel,Shoes,Asia,China,Richardsonside,5,968.77,0.14,4165.71,,8.99,High,Anthony Stevenson,W3
+O-100459,2025-06-08,C-1101,Almost Plus,Electronics,Phones,Asia,China,New Christopher,17,778.68,0.16,11119.55,1634.05,30.37,High,Stacy Kelley,W1
+O-100460,2024-08-01,C-4495,These X,Apparel,Jackets,Asia,India,Port Rebeccashire,1,846.9,0.28,609.77,,,Medium,Christine Harper,W1
+O-100461,2024-10-25,C-6776,Even Mini,Apparel,Jackets,North America,Canada,New Johntown,17,880.83,,12428.51,,38.65,Medium,Sarah Hayes,W4
+O-100462,2025-02-13,C-3888,Job Pro,Furniture,Tables,Asia,Japan,Briannaton,12,578.3,0.14,5968.06,781.06,19.9,High,Tammy Parker,W2
+O-100463,2024-08-24,C-4036,Modern Mini,Electronics,Tablets,North America,Canada,South Juliaside,16,481.86,0.11,6861.69,1067.73,17.09,,Andrea Owens,W1
+O-100464,2024-10-01,C-3007,Recent X,Apparel,Shoes,Europe,UK,Navarroberg,12,533.59,0.29,4546.19,781.73,,Medium,William Ray,
+O-100465,2024-11-07,C-4586,Already X,Electronics,Tablets,Asia,Japan,West Ronald,13,477.61,0.06,5836.39,778.64,36.05,,Timothy Anderson,
+O-100466,2025-06-28,C-1719,Article Pro,Apparel,Jackets,Asia,China,Connieborough,19,265.64,0.0,5047.16,,19.57,Low,,W4
+O-100467,2024-11-05,C-9599,Certain Pro,Electronics,Phones,North America,Canada,Bowersmouth,16,644.46,0.29,7321.07,1239.62,42.33,Low,Steven Steele,W1
+O-100468,2025-05-17,C-6004,Toward X,Electronics,Laptops,North America,USA,Williamsmouth,11,966.15,0.12,9352.33,1145.58,37.6,,Diana Payne,W1
+O-100469,2024-12-03,C-3924,Knowledge Mini,Electronics,Tablets,Asia,Japan,Walterside,7,708.12,,3866.34,496.09,8.24,,Justin Owens,W3
+O-100470,2025-04-09,C-4910,Economic Pro,Electronics,Phones,Asia,Japan,South David,4,517.67,0.1,1863.61,491.37,32.8,Low,Ashley Ramos,W1
+O-100471,2025-06-04,C-6378,Better Mini,Electronics,Phones,Asia,China,North Dennis,11,173.48,0.14,1641.12,249.8,15.2,Medium,Jacqueline King,W3
+O-100472,2025-05-26,C-7383,Attack Plus,Apparel,Shoes,North America,Canada,East Whitney,11,431.66,0.02,4653.29,1262.24,9.15,High,Dawn Stephens,
+O-100473,2025-02-08,C-9431,Father X,Electronics,Laptops,Europe,Germany,Port Michelle,15,45.18,0.01,670.92,113.49,15.02,High,Andrew Choi,W1
+O-100474,2024-11-18,C-9689,Into X,Electronics,Tablets,Europe,France,Boothtown,5,739.05,0.29,2623.63,,39.66,High,,W1
+O-100475,2025-04-07,C-5797,Marriage Mini,Furniture,Sofas,Asia,India,Lake Roberttown,18,454.56,0.12,7200.23,,15.39,Medium,Elizabeth Myers,W4
+O-100476,2024-10-27,C-7468,Someone Mini,Furniture,Tables,Europe,UK,Andrewtown,3,405.61,0.29,863.95,199.43,27.06,Medium,Harold Dean,
+O-100477,2025-06-22,C-8266,Back Mini,Furniture,Tables,North America,Canada,West Hannah,3,415.83,0.2,997.99,178.99,32.04,,Rebecca Lopez,W3
+O-100478,2025-01-02,C-6991,Be Pro,Electronics,Phones,Europe,Germany,Jacobshire,15,390.84,,4396.95,1162.96,14.9,Medium,Amanda Morales,
+O-100479,2024-10-19,C-8836,Natural Mini,Electronics,Phones,Asia,China,West Martha,18,94.9,,1349.48,372.34,14.09,High,Patrick Thompson,W4
+O-100480,2025-01-04,C-8603,Last Plus,Furniture,Sofas,Asia,Japan,South Amandaburgh,4,493.87,,1560.63,,7.23,High,Stephanie Stewart,W4
+O-100481,2025-06-22,C-7258,Whom Pro,Apparel,Jackets,North America,USA,Michellemouth,18,660.77,0.08,10942.35,1239.15,40.53,,Richard Johnson,W1
+O-100482,2024-10-21,C-3100,Street Plus,Furniture,Tables,North America,Canada,Smithton,13,220.95,0.11,2556.39,461.9,14.41,Low,Lori Rodgers,
+O-100483,2024-09-01,C-8517,Series Plus,Apparel,Shirts,North America,USA,New Eric,18,483.14,0.12,7652.94,969.14,40.83,Medium,Trevor Medina,W2
+O-100484,2025-07-12,C-5232,Onto Pro,Furniture,Chairs,Europe,UK,New Hunter,5,935.4,,4630.23,751.11,,High,Jon Robinson,W3
+O-100485,2024-10-25,C-7105,Stage X,Furniture,Sofas,Europe,France,Muellerfurt,14,923.34,0.18,10599.94,,25.32,High,Linda Taylor,
+O-100486,2025-05-29,C-5712,All Mini,Electronics,Phones,Asia,India,Landrymouth,13,429.87,0.01,5532.43,1278.76,12.25,Medium,Brian Ball,W3
+O-100487,2025-07-22,C-3423,Guy Plus,Electronics,Tablets,North America,Canada,Port Maria,4,595.21,0.04,2285.61,674.57,25.88,Low,Mr. Cody Grant DDS,W3
+O-100488,2025-01-22,C-3175,Pretty Pro,Electronics,Phones,Asia,China,Millershire,5,821.79,0.28,2958.44,630.58,,Medium,Catherine Gray,W3
+O-100489,2025-04-24,C-9616,Policy Mini,Apparel,Shirts,Europe,UK,West Latoya,19,402.53,,6577.34,1425.03,14.65,Low,,W3
+O-100490,2025-03-20,C-9042,Window Pro,Electronics,Laptops,Europe,Germany,Michelleberg,4,850.2,0.1,3060.72,643.98,27.21,Medium,Zachary Wall,
+O-100491,2024-10-21,C-8405,Child Pro,Electronics,Phones,Europe,UK,Loweville,18,506.75,0.28,6567.48,1779.19,35.22,High,Kendra Bryant,W1
+O-100492,2025-07-13,C-2415,Region Mini,Furniture,Tables,North America,USA,Hahnview,6,498.42,0.2,2392.42,575.59,33.21,,Richard Webb,W1
+O-100493,2025-05-23,C-6952,Support Pro,Electronics,Laptops,Europe,France,Frankborough,1,572.39,,538.05,82.2,49.91,,Aaron Frazier,W1
+O-100494,2025-06-01,C-9379,Make Plus,Apparel,Shoes,North America,Canada,Lake Vanessa,20,629.96,0.13,10961.3,,6.24,,David Mckay,W2
+O-100495,2024-09-24,C-5020,Them Plus,Apparel,Shirts,North America,Canada,Port Gregoryport,10,680.36,0.18,5578.95,1036.05,37.73,Medium,Douglas Owen,W4
+O-100496,2024-11-25,C-5878,Cut Mini,Electronics,Tablets,Europe,Germany,Mirandafurt,13,474.37,0.11,5488.46,724.55,42.15,,Caleb Gregory,
+O-100497,2025-04-21,C-3244,Take X,Apparel,Shirts,North America,Canada,Nicholasport,6,295.93,0.27,1296.17,310.09,39.54,High,Gary Smith,W2
+O-100498,2024-09-14,C-2271,Service Mini,Electronics,Tablets,Europe,Germany,West Cherylborough,4,347.62,,1154.1,135.15,49.14,Medium,,W1
+O-100499,2025-02-27,C-8228,Upon Pro,Furniture,Chairs,Asia,China,North Tiffanyfort,1,965.14,0.05,916.88,,19.35,High,Denise Hamilton,W1
+O-100500,2025-01-29,C-4732,Member X,Electronics,Laptops,North America,USA,Helenton,10,531.54,0.15,4518.09,957.19,42.02,Medium,Manuel Myers,W3
+O-100501,2024-08-11,C-6815,Former Plus,Apparel,Shoes,Europe,France,East Sarahhaven,18,880.4,0.15,13470.12,1569.14,19.93,Medium,Lorraine Evans,W3
+O-100502,2024-11-09,C-6322,Anyone X,Furniture,Tables,Asia,India,East Lisaview,5,202.5,0.17,840.38,251.97,30.73,High,Jennifer Sanchez DVM,W3
+O-100503,2024-08-27,C-9533,On Plus,Furniture,Sofas,Asia,India,Wrighthaven,15,629.0,0.19,7642.35,,37.1,Low,,W1
+O-100504,2024-09-30,C-6233,Everyone Mini,Electronics,Phones,Europe,UK,Lake Maryport,13,501.9,0.25,4893.52,629.76,,,Lindsey Stanton,W3
+O-100505,2024-08-24,C-1738,Ready X,Apparel,Shoes,North America,Canada,Marissachester,7,68.54,0.09,436.6,49.98,39.74,High,Mark Garrett,W3
+O-100506,2024-11-14,C-3336,Must X,Electronics,Phones,North America,Canada,Abigailville,14,449.73,,5477.71,875.59,9.99,High,James Moore,W4
+O-100507,2024-08-21,C-5579,Resource Plus,Electronics,Laptops,Asia,China,North Davidbury,8,251.29,0.26,1487.64,405.03,16.48,Low,Angela Barnes,
+O-100508,2025-04-01,C-9787,Career Mini,Furniture,Tables,North America,USA,North Peggy,8,292.2,,2033.71,,40.81,High,Wendy Parrish,W2
+O-100509,2025-06-16,C-5830,Site Mini,Furniture,Chairs,North America,USA,Goodview,19,593.16,0.06,10593.84,1871.81,29.16,Low,Christy Jimenez,W2
+O-100510,2024-09-28,C-5293,Choice X,Apparel,Shoes,Asia,India,North Jennifer,11,450.76,0.08,4561.69,856.33,,High,Brandy Lozano,W3
+O-100511,2025-02-09,C-7592,Wind Mini,Furniture,Chairs,North America,USA,Riceside,8,43.53,0.21,275.11,,49.55,Medium,Mitchell Williams,W3
+O-100512,2025-04-03,C-8680,Yourself Plus,Furniture,Chairs,Europe,France,East Cassandra,4,410.92,0.21,1298.51,194.2,41.23,Medium,,W4
+O-100513,2025-05-08,C-4298,Through X,Furniture,Sofas,Asia,China,North Michelle,11,84.12,0.12,814.28,181.12,11.81,Medium,Blake Dorsey,
+O-100514,2025-05-29,C-5202,Theory X,Electronics,Laptops,North America,Canada,North Kevin,20,732.61,0.16,12307.85,2424.11,,High,Ashley Hale,W3
+O-100515,2024-08-15,C-7287,Type Pro,Electronics,Phones,Asia,China,Johnsonburgh,7,958.56,0.03,6508.62,1072.69,6.11,,Brian Diaz,
+O-100516,2025-02-25,C-8759,Training Mini,Apparel,Shirts,North America,Canada,Colemanfort,6,210.38,0.14,1085.56,139.36,,Medium,Justin Price,W2
+O-100517,2025-04-23,C-4218,Player Plus,Electronics,Phones,Europe,UK,New Beverly,1,344.2,0.08,316.66,66.46,,Medium,,W3
+O-100518,2024-10-25,C-1260,Kid Mini,Electronics,Laptops,North America,Canada,Jonathanstad,8,960.08,,6451.74,1261.7,44.23,High,Sharon Mendoza,W3
+O-100519,2025-02-18,C-2552,Entire X,Furniture,Tables,North America,Canada,North Margaret,9,520.44,0.04,4496.6,625.88,44.87,Medium,Chris Melton,
+O-100520,2024-08-31,C-1258,Friend X,Electronics,Tablets,Europe,France,Ronaldchester,18,359.16,,4784.01,1115.23,,High,Heidi Hernandez,W2
+O-100521,2024-08-01,C-8242,Factor Plus,Furniture,Tables,Europe,France,Melissaville,1,248.23,0.14,213.48,32.71,13.68,Medium,Dr. Jeff Johnson DDS,W1
+O-100522,2025-05-24,C-9619,Call Plus,Furniture,Tables,Asia,Japan,New Garrettton,2,704.07,0.1,1267.33,355.32,41.58,High,Nicholas Payne,W3
+O-100523,2025-07-17,C-9673,Kid Pro,Furniture,Tables,Europe,UK,Wendytown,3,834.91,0.07,2329.4,624.76,41.62,Low,Vicki Newman,W2
+O-100524,2025-05-16,C-7520,Surface X,Furniture,Sofas,Asia,Japan,West Michaelborough,19,581.57,,8839.86,,32.02,High,Monique Avila,W4
+O-100525,2025-04-28,C-2045,Bill Mini,Electronics,Laptops,North America,USA,Port Heidiburgh,8,137.54,0.02,1078.31,311.58,40.17,Medium,Joshua Brown,W1
+O-100526,2025-01-19,C-4848,Actually Mini,Electronics,Laptops,Asia,Japan,East Katelyn,11,978.47,0.04,10332.64,1644.12,9.34,Medium,Brendan Pham,W3
+O-100527,2025-02-04,C-2911,Send Plus,Apparel,Shoes,North America,USA,Walkertown,17,551.54,0.06,8813.61,1944.25,30.83,,Laura Garcia,W2
+O-100528,2025-07-23,C-4270,Condition Plus,Apparel,Jackets,North America,Canada,Adrianamouth,9,403.97,0.19,2944.94,423.16,8.15,Medium,Susan Montgomery,W2
+O-100529,2024-08-06,C-2141,Congress X,Electronics,Phones,Europe,France,Lake Kyle,8,830.6,,5382.29,1592.55,21.17,Low,George Nelson,W4
+O-100530,2024-11-11,C-3585,Reduce Mini,Apparel,Shoes,Asia,Japan,West Benjaminmouth,10,640.21,0.3,4481.47,481.86,24.02,Low,Andrew Jones,W3
+O-100531,2024-10-25,C-1925,What Pro,Furniture,Tables,North America,Canada,Danielland,4,57.9,0.06,217.7,42.65,18.69,High,,W2
+O-100532,2024-11-30,C-3044,Throw X,Apparel,Shoes,North America,Canada,South Kevinfurt,2,403.24,0.27,588.73,113.86,17.05,Medium,Carolyn Coleman,
+O-100533,2025-02-04,C-9253,Manager Pro,Furniture,Sofas,Asia,India,Benjaminberg,4,375.99,0.26,1112.93,202.82,28.42,,Edward Floyd,
+O-100534,2024-08-16,C-5215,Impact Mini,Apparel,Shirts,Asia,India,Comptonbury,6,286.3,0.21,1357.06,,36.58,High,,W2
+O-100535,2025-01-16,C-3954,Out Plus,Furniture,Tables,Europe,France,Lake Tylerhaven,10,340.4,0.17,2825.32,779.78,19.33,Low,,W1
+O-100536,2025-01-11,C-6988,Here Pro,Electronics,Laptops,Europe,UK,West Brittney,10,482.94,0.3,3380.58,345.42,,,Cynthia Johnson,W1
+O-100537,2025-01-22,C-9042,Nearly X,Furniture,Tables,North America,USA,Kingchester,12,92.04,0.15,938.81,,18.96,Low,Christopher Hill,W1
+O-100538,2024-09-27,C-1650,Small Mini,Apparel,Jackets,Europe,UK,Port Elizabeth,1,818.28,0.15,695.54,143.62,48.31,,,W1
+O-100539,2024-08-20,C-7004,First X,Furniture,Sofas,Asia,Japan,Markview,17,93.16,0.16,1330.32,,35.03,,Erin Carr,W4
+O-100540,2024-11-21,C-2775,Note X,Electronics,Phones,Asia,China,Pearsonchester,11,901.93,,9524.38,2770.81,26.8,High,Jose Pittman,W2
+O-100541,2025-05-26,C-1459,Role X,Apparel,Shirts,Europe,Germany,East Todd,18,624.82,0.19,9109.88,2579.12,49.91,Medium,,W2
+O-100542,2025-07-08,C-3887,Energy Plus,Apparel,Jackets,Asia,India,Lake Courtney,6,201.87,0.19,981.09,139.87,33.96,,,W4
+O-100543,2025-02-11,C-4449,Require Mini,Furniture,Chairs,North America,USA,West Timothymouth,13,595.06,0.24,5879.19,1486.3,12.76,High,Lisa Smith,W1
+O-100544,2025-02-10,C-4123,Car Plus,Electronics,Phones,North America,Canada,Crystalhaven,10,66.67,0.17,553.36,106.28,16.8,Medium,Timothy Olsen,W2
+O-100545,2025-01-09,C-8249,Offer Mini,Furniture,Tables,North America,Canada,Lake Jennifer,12,970.57,0.12,10249.22,2133.31,36.89,Low,Kaitlyn Vincent,W3
+O-100546,2024-12-09,C-7184,Wear Pro,Electronics,Phones,Asia,India,Port Jacqueline,11,602.95,,4775.36,942.85,,High,Alexandria Griffin,W1
+O-100547,2024-12-02,C-7904,Fund Pro,Furniture,Chairs,North America,Canada,Lake Phillipbury,3,304.81,,859.56,163.44,45.73,Medium,Robert Simpson,W1
+O-100548,2024-09-27,C-7564,Best Mini,Electronics,Tablets,Europe,Germany,East Vincent,12,443.41,,4788.83,,15.67,Low,Geoffrey Hill,W1
+O-100549,2024-11-04,C-7002,Who Pro,Furniture,Tables,Europe,Germany,Elizabethtown,19,995.69,0.25,14188.58,,8.01,Medium,Shannon Brown,W3
+O-100550,2025-06-19,C-7404,North Pro,Apparel,Shirts,Europe,France,West Robin,20,216.09,0.16,3630.31,491.26,,High,,W2
+O-100551,2025-04-21,C-7785,Long X,Furniture,Tables,Europe,Germany,Gabrielafort,5,185.6,,742.4,167.36,38.07,Medium,Jeffrey Lowery,
+O-100552,2025-07-02,C-2264,Thing Pro,Electronics,Tablets,North America,Canada,Jonathanborough,4,905.87,0.23,2790.08,820.51,40.58,,Vincent Harris,W4
+O-100553,2024-09-26,C-7466,Congress X,Apparel,Shoes,Europe,France,New Alison,15,779.93,0.15,9944.11,1237.65,6.14,,Nancy Le,
+O-100554,2025-04-01,C-5333,Miss Mini,Electronics,Tablets,Asia,China,North Daniel,10,285.72,0.1,2571.48,276.1,,Medium,Angela Grant,W2
+O-100555,2025-01-28,C-8867,Sound X,Electronics,Laptops,North America,Canada,West Samantha,2,463.42,0.24,704.4,120.8,49.42,,Mary Webb,W1
+O-100556,2025-05-14,C-9023,Tough Pro,Electronics,Phones,North America,USA,Coreybury,7,112.84,0.01,781.98,212.93,31.82,Low,Sarah Martin,W2
+O-100557,2025-02-16,C-8488,Newspaper Plus,Apparel,Shoes,Europe,UK,Sarahshire,7,376.33,0.13,2291.85,235.54,49.68,Medium,Brendan Brandt,
+O-100558,2025-05-10,C-6464,Or Pro,Electronics,Laptops,North America,Canada,Catherinestad,20,425.65,0.11,7576.57,,28.56,Medium,Gerald Martinez,W2
+O-100559,2025-01-28,C-8402,Wait Plus,Apparel,Shirts,Europe,Germany,West Williamhaven,6,693.2,0.18,3410.54,615.59,28.89,,Victoria Singh,W4
+O-100560,2025-02-22,C-5284,Land Pro,Electronics,Tablets,Europe,France,North Tylerfurt,15,956.83,,13491.3,3727.13,7.11,Medium,Marisa Erickson,W2
+O-100561,2024-09-05,C-6274,Serious X,Apparel,Shirts,North America,USA,New Travis,5,69.87,,324.9,90.99,49.36,,James Ramsey,W2
+O-100562,2024-08-08,C-5723,Similar Pro,Furniture,Chairs,Asia,China,Lindseyberg,2,345.77,0.09,629.3,72.53,25.24,Medium,Mrs. Elizabeth Garner,W4
+O-100563,2024-11-11,C-8120,Catch Mini,Furniture,Sofas,Asia,India,Lake Rachelbury,18,817.6,0.22,11479.1,,12.01,Medium,,W3
+O-100564,2025-06-01,C-1801,Face Plus,Apparel,Jackets,Europe,France,Sharonbury,8,319.92,0.28,1842.74,472.01,10.18,High,Samantha Perez,W1
+O-100565,2024-11-09,C-1833,Individual Mini,Furniture,Sofas,Europe,Germany,Angelafurt,12,357.89,,3994.05,974.13,,Low,Eric Rice,W2
+O-100566,2025-05-19,C-5686,Night X,Furniture,Tables,Asia,India,Steelefurt,1,10.03,0.29,7.12,0.87,33.41,Medium,Daniel Medina,W1
+O-100567,2025-07-08,C-7570,Drop X,Apparel,Shirts,Asia,Japan,Webermouth,12,743.17,0.28,6420.99,1900.85,18.02,Low,Katherine Hill,W1
+O-100568,2025-04-24,C-7273,Huge Plus,Furniture,Tables,Europe,France,Amberfurt,16,678.36,0.02,10636.68,2654.46,32.34,High,Jerry Stein Jr.,W1
+O-100569,2025-07-17,C-8983,Throw X,Electronics,Laptops,Europe,France,South Amandashire,4,230.65,,811.89,,46.64,Medium,Benjamin Mcknight,W3
+O-100570,2024-07-28,C-6751,Agency Pro,Furniture,Chairs,North America,Canada,South Jon,12,962.01,,8773.53,1617.77,35.46,High,Robert Burns,W1
+O-100571,2024-10-04,C-3494,Also X,Electronics,Tablets,North America,Canada,West Brianburgh,1,585.8,0.19,474.5,85.68,16.2,Medium,Jamie Friedman,W1
+O-100572,2025-01-12,C-4525,Agreement X,Apparel,Shoes,Europe,Germany,South Jonathan,7,530.61,0.21,2934.27,570.73,35.3,Low,Shelby Reese,W3
+O-100573,2024-12-19,C-5560,With X,Electronics,Tablets,North America,Canada,North Michaelmouth,2,959.62,0.24,1458.62,310.27,35.03,Medium,Angela Fleming,W1
+O-100574,2025-03-10,C-3413,Add X,Furniture,Chairs,North America,Canada,Port Mark,17,440.67,0.22,5843.28,903.11,34.17,Medium,,
+O-100575,2025-03-17,C-7474,Treatment Plus,Furniture,Sofas,North America,Canada,Nelsonmouth,7,421.1,0.07,2741.36,331.82,33.14,Medium,Amanda Robertson,W3
+O-100576,2025-07-02,C-3244,Happy Plus,Furniture,Tables,Asia,China,Davidland,14,97.84,,1273.88,366.07,47.64,Medium,,W3
+O-100577,2024-08-18,C-8118,Kind X,Apparel,Jackets,Europe,Germany,North Evan,7,247.39,,1471.97,,15.15,Low,Kristen Koch,W3
+O-100578,2025-06-14,C-6439,Rock Plus,Furniture,Chairs,North America,Canada,New Kristenhaven,13,355.48,,3512.14,657.11,14.55,,Sharon Lyons,W3
+O-100579,2025-02-05,C-7882,Above Mini,Furniture,Tables,Asia,Japan,Gibsonmouth,20,618.89,0.06,11635.13,2757.5,,Low,Tracey Rodriguez,W4
+O-100580,2024-09-06,C-9820,Old Plus,Furniture,Sofas,Asia,Japan,Wrightport,14,306.54,0.11,3819.49,1083.63,15.22,High,Matthew Smith,W2
+O-100581,2025-04-11,C-9656,Thus Mini,Furniture,Sofas,Asia,Japan,Longstad,17,778.84,0.23,10195.02,1355.75,,,Randall Taylor,W4
+O-100582,2024-12-09,C-6845,Chair Pro,Electronics,Tablets,Asia,India,Ericchester,11,340.48,,3558.02,818.22,43.93,Low,Christina Stephens,W2
+O-100583,2025-06-05,C-5125,Although X,Furniture,Sofas,North America,Canada,Dustinburgh,19,387.83,0.07,6852.96,817.6,,High,,W3
+O-100584,2025-04-09,C-7054,Administration Pro,Electronics,Laptops,Europe,France,Carterstad,4,995.21,0.17,3304.1,,7.0,,Nancy Hughes,W1
+O-100585,2024-12-22,C-5088,Test Mini,Furniture,Tables,Europe,Germany,New Alexisstad,19,944.44,,12740.5,,9.13,Low,Laura Cross,W4
+O-100586,2024-10-17,C-4485,Clearly X,Furniture,Chairs,Asia,Japan,South Rebecca,5,495.04,0.27,1806.9,248.88,43.1,Low,,
+O-100587,2024-08-29,C-4077,Place Mini,Furniture,Sofas,Europe,UK,Carterfort,15,164.42,0.12,2170.34,550.19,41.69,Low,Katie Christian,W2
+O-100588,2024-12-31,C-2879,Develop X,Electronics,Tablets,Europe,France,Tracyland,18,513.51,,8503.73,1154.16,,Low,Benjamin Garcia,W3
+O-100589,2025-06-08,C-8152,Oil Plus,Furniture,Tables,Asia,India,Whiteville,20,910.33,0.08,16750.07,4697.53,7.7,Medium,Mr. Levi Dorsey,W2
+O-100590,2024-09-11,C-8295,Table Mini,Apparel,Shoes,Europe,France,Hollyview,5,814.69,0.14,3503.17,591.45,27.28,Medium,John Thomas Jr.,
+O-100591,2025-07-09,C-5677,Nation Pro,Apparel,Shoes,Europe,UK,Johnsonmouth,3,616.29,0.07,1719.45,,11.22,Low,Robin Williams,
+O-100592,2024-12-21,C-7527,Later Pro,Furniture,Sofas,North America,Canada,Port Corey,10,658.55,,5004.98,,6.36,High,Alyssa Allen,W4
+O-100593,2025-06-09,C-3317,American X,Furniture,Tables,North America,Canada,Byrdton,20,434.33,0.01,8599.73,,38.83,Medium,Jacob Jones,
+O-100594,2024-10-10,C-9310,Resource Plus,Apparel,Jackets,Europe,Germany,Weissmouth,2,698.46,,1327.07,148.41,43.61,Low,Vickie Mullen,
+O-100595,2024-09-22,C-9800,Many Plus,Apparel,Shoes,North America,USA,Patriciachester,8,897.37,0.07,6676.43,1199.96,33.56,Medium,Robert Long,W1
+O-100596,2025-06-27,C-6574,Recent X,Electronics,Phones,Asia,India,Walkerberg,4,378.13,,1452.02,402.41,17.31,High,Edward Mack,W4
+O-100597,2025-03-14,C-1053,Art Mini,Electronics,Tablets,Europe,UK,Campbellland,6,968.94,0.14,4999.73,1372.22,17.2,Low,Caleb Bradley,
+O-100598,2024-11-10,C-3212,Glass X,Furniture,Tables,Asia,India,West Danielle,4,125.8,0.11,447.85,84.2,,Medium,Dominique Knight,W1
+O-100599,2025-01-26,C-8739,Hot Mini,Furniture,Tables,North America,USA,Francistown,16,789.67,,11118.55,,36.82,Medium,Ryan Lloyd,W3
+O-100600,2024-09-04,C-4113,Play Mini,Furniture,Sofas,Asia,Japan,Maybury,1,788.61,0.02,772.84,,20.55,High,Manuel Tyler MD,

@@ -310,5 +310,57 @@
     "step": "Verification",
     "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
     "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "timestamp": "2025-07-27T19:35:22.758818-05:00",
+    "step": "Upload",
+    "hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "file_name": "GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T19:39:53.814983-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae"
+  },
+  {
+    "timestamp": "2025-07-27T19:39:57.614947-05:00",
+    "step": "Cleaning",
+    "hash": "ca897180a0b796e90d67ddad876310371e279791f70e56b5d4a4f2402fede805",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "file_name": "GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T19:40:00.363351-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "ca897180a0b796e90d67ddad876310371e279791f70e56b5d4a4f2402fede805"
+  },
+  {
+    "timestamp": "2025-07-27T19:40:03.539828-05:00",
+    "step": "Normalization",
+    "hash": "9bf1f97282e14832ffe30b459ec8034ece8c5dc47d6caeec52c3bece92a4ecd4",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "file_name": "normalized_GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T19:40:06.761115-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "9bf1f97282e14832ffe30b459ec8034ece8c5dc47d6caeec52c3bece92a4ecd4"
+  },
+  {
+    "timestamp": "2025-07-27T19:40:10.683576-05:00",
+    "step": "Aggregation",
+    "hash": "6bcc3f39240805dbf678d84d6bcebae70854d2185c7174c12033f4c6eeb5d75d",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "file_name": "aggregated_normalized_GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T19:40:13.725964-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "6bcc3f39240805dbf678d84d6bcebae70854d2185c7174c12033f4c6eeb5d75d"
   }
 ]

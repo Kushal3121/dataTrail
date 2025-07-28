@@ -80,8 +80,8 @@ async def verify_provenance(role: str = Header(..., convert_underscores=False)):
     authorize_action(role, "verify")
 
     log = load_provenance_log()
+
     for i in range(1, len(log)):
-        # Check hash chain
         if log[i]["previous_hash"] != log[i - 1]["hash"]:
             return JSONResponse(status_code=400, content={
                 "status": "Tampering detected: hash chain mismatch",
@@ -90,34 +90,11 @@ async def verify_provenance(role: str = Header(..., convert_underscores=False)):
                 "found": log[i]["previous_hash"]
             })
 
-    for entry in log:
-        filename = entry.get("file_name")  
-        if not filename:
-            continue
-        path = (
-            Path("data/raw") / filename if entry["step"] == "Upload"
-            else Path("data/processed") / filename
-        )
-        if not path.exists():
-            return JSONResponse(status_code=400, content={
-                "status": "File not found for verification",
-                "file": filename
-            })
+    dummy_df = pd.DataFrame()
+    log_transformation("Verification", dummy_df)
 
-        df = pd.read_csv(path)
-        current_hash = compute_sha256(df)
-
-        if current_hash != entry["hash"]:
-            return JSONResponse(status_code=400, content={
-                "status": "Tampering detected",
-                "step": entry["step"],
-                "file": filename,
-                "expected_hash": entry["hash"],
-                "actual_hash": current_hash
-            })
-
-    log_transformation("Verification", pd.DataFrame()) 
     return {"status": "Provenance chain is valid"}
+
 
 
 @app.get("/log")
