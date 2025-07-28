@@ -18,7 +18,7 @@ const VerifyPage = () => {
     })
       .then(async (res) => {
         const data = await res.json();
-        if (!res.ok) throw new Error(data.detail || 'Tampering detected');
+        if (!res.ok) throw new Error(data.detail);
         setResult({ status: 'valid', data });
         toast.success('Provenance is intact');
       })
@@ -57,14 +57,10 @@ const VerifyPage = () => {
       )}
 
       {result && result.status === 'tampered' && (
-        <div className='flex items-start gap-3 p-4 border rounded-md bg-red-50 border-red-200'>
-          <ShieldAlert className='text-red-600 mt-1' />
-          <div className='text-sm text-red-800'>
-            <strong>Tampering detected:</strong>
-            <br />
-            {typeof result.data === 'string'
-              ? result.data
-              : JSON.stringify(result.data, null, 2)}
+        <div className='flex items-center gap-3 p-4 border rounded-md bg-red-50 border-red-200'>
+          <ShieldAlert className='text-red-600' />
+          <div className='text-sm text-red-800 font-medium'>
+            Tampering detected.
           </div>
         </div>
       )}

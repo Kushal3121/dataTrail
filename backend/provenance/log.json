@@ -362,5 +362,117 @@
     "step": "Verification",
     "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
     "previous_hash": "6bcc3f39240805dbf678d84d6bcebae70854d2185c7174c12033f4c6eeb5d75d"
+  },
+  {
+    "timestamp": "2025-07-27T19:42:21.572323-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "timestamp": "2025-07-27T19:43:06.008149-05:00",
+    "step": "Upload",
+    "hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "file_name": "GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T19:44:28.095254-05:00",
+    "step": "Aggregation",
+    "hash": "6bcc3f39240805dbf678d84d6bcebae70854d2185c7174c12033f4c6eeb5d75d",
+    "previous_hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae",
+    "file_name": "aggregated_normalized_GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T19:44:31.260498-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "6bcc3f39240805dbf678d84d6bcebae70854d2185c7174c12033f4c6eeb5d75d"
+  },
+  {
+    "timestamp": "2025-07-27T21:01:30.534815-05:00",
+    "step": "Upload",
+    "hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546",
+    "file_name": "GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T21:03:07.068046-05:00",
+    "step": "Cleaning",
+    "hash": "ca897180a0b796e90d67ddad876310371e279791f70e56b5d4a4f2402fede805",
+    "previous_hash": "353d0176e38512986f25e6270d989581d1099909ef3050f40efade83b89495ae",
+    "file_name": "GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T21:04:12.627798-05:00",
+    "step": "Cleaning",
+    "hash": "ca897180a0b796e90d67ddad876310371e279791f70e56b5d4a4f2402fede805",
+    "previous_hash": "ca897180a0b796e90d67ddad876310371e279791f70e56b5d4a4f2402fede805",
+    "file_name": "GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T21:04:19.509965-05:00",
+    "step": "Cleaning",
+    "hash": "ca897180a0b796e90d67ddad876310371e279791f70e56b5d4a4f2402fede805",
+    "previous_hash": "ca897180a0b796e90d67ddad876310371e279791f70e56b5d4a4f2402fede805",
+    "file_name": "GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T21:05:05.924782-05:00",
+    "step": "Normalization",
+    "hash": "9bf1f97282e14832ffe30b459ec8034ece8c5dc47d6caeec52c3bece92a4ecd4",
+    "previous_hash": "ca897180a0b796e90d67ddad876310371e279791f70e56b5d4a4f2402fede805",
+    "file_name": "normalized_GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T21:05:13.879376-05:00",
+    "step": "Normalization",
+    "hash": "9bf1f97282e14832ffe30b459ec8034ece8c5dc47d6caeec52c3bece92a4ecd4",
+    "previous_hash": "9bf1f97282e14832ffe30b459ec8034ece8c5dc47d6caeec52c3bece92a4ecd4",
+    "file_name": "normalized_GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T21:05:17.635424-05:00",
+    "step": "Normalization",
+    "hash": "9bf1f97282e14832ffe30b459ec8034ece8c5dc47d6caeec52c3bece92a4ecd4",
+    "previous_hash": "9bf1f97282e14832ffe30b459ec8034ece8c5dc47d6caeec52c3bece92a4ecd4",
+    "file_name": "normalized_GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T21:05:58.584275-05:00",
+    "step": "Aggregation",
+    "hash": "6bcc3f39240805dbf678d84d6bcebae70854d2185c7174c12033f4c6eeb5d75d",
+    "previous_hash": "9bf1f97282e14832ffe30b459ec8034ece8c5dc47d6caeec52c3bece92a4ecd4",
+    "file_name": "aggregated_normalized_GlobalProductSales.csv"
+  },
+  {
+    "timestamp": "2025-07-27T21:06:45.849950-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "6bcc3f39240805dbf678d84d6bcebae70854d2185c7174c12033f4c6eeb5d75d"
+  },
+  {
+    "timestamp": "2025-07-27T21:06:51.888201-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "timestamp": "2025-07-27T21:07:33.024353-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "timestamp": "2025-07-27T21:07:35.937171-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "timestamp": "2025-07-27T21:08:01.462887-05:00",
+    "step": "Verification",
+    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "previous_hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
   }
 ]
